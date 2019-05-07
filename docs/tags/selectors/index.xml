@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selectors on Delven Documentation</title>
+    <link>/tags/selectors/</link>
+    <description>Recent content in Selectors on Delven Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/selectors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Element Selection</title>
+      <link>/event-flow/element-selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/event-flow/element-selection/</guid>
+      <description>How to use Selector in PhantomSQL
+Selectors tell PhantomSQL which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in SELECT clause.
+Selector types    Name Spec Data Types Description     by-css required [String] Select using CSS   by-name required [String] Select using element name   by-xpath required [String] Select using XPath   by-regex required [String] Select using regular expressions    Requirement [ { &amp;quot;by-XXXXX&amp;quot; : &amp;quot;SELECTOR&amp;quot;, &amp;quot;filter&amp;quot; : &amp;quot;&amp;quot; } ]  Examples For concreate example for specific types visit.</description>
+    </item>
+    
+  </channel>
+</rss>

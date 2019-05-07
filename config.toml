@@ -1,4 +1,5 @@
 baseurl = "/"
+publishDir = "docs"
 languageCode = "en-us"
 title = "Delven Documentation"
 #theme = "hugo-material-docs"

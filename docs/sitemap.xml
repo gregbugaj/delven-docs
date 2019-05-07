@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/api-reference/api-endpoints/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/</loc>
+  </url>
+  
+  <url>
+    <loc>/meta/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/attributes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/event-flow/element-attributes/</loc>
+  </url>
+  
+  <url>
+    <loc>/meta/building/</loc>
+  </url>
+  
+  <url>
+    <loc>/event-flow/buttons/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/crawl/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/capture/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/language-elements/comparsion-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/cookies/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/crawling/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/css/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/syntax/datatypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/development/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dropdown/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/event-flow/dropdown/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/dynamic/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/event-flow/</loc>
+  </url>
+  
+  <url>
+    <loc>/event-flow/element-selection/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/event-handling/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/event-flow/event-handling/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/eventflow/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/events/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/api-reference/events/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/from/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/form-submission/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/forms/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/insert/</loc>
+  </url>
+  
+  <url>
+    <loc>/language-elements/coversions/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/join/</loc>
+  </url>
+  
+  <url>
+    <loc>/event-flow/executing-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/getting-started/joining/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/keyboard/</loc>
+  </url>
+  
+  <url>
+    <loc>/event-flow/keypress-events/</loc>
+  </url>
+  
+  <url>
+    <loc>/language-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/meta/license/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/mouse/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/native/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/options/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/pipeline/</loc>
+  </url>
+  
+  <url>
+    <loc>/language-elements/pseudocolumns/</loc>
+  </url>
+  
+  <url>
+    <loc>/meta/references/</loc>
+  </url>
+  
+  <url>
+    <loc>/meta/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-reference/request/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/retrieving-videos/</loc>
+  </url>
+  
+  <url>
+    <loc>/meta/roadmap/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/select/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/subquery/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/selectors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/api-reference/storage/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/storing-results/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>/language-elements/table-designators/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/textbox/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/event-flow/textbox/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/using/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/watch/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/where/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/with/</loc>
+  </url>
+  
+  <url>
+    <loc>/syntax/within/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+</urlset>
