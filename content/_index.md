@@ -1,10 +1,10 @@
 ---
-title: Welcome to PhantomSQL
+title: Welcome to Delven
 type: index
 weight: 0
 ---
 
-PhantomSQL is a Domain Specific Language  (DSL) designed for mining content from static and dynamic sources, It closely resembles SQL with features borrowed from other popular dynamic languages.
+Delven is a Domain Specific Language  (DSL) designed for mining content from static and dynamic sources, It closely resembles SQL with features borrowed from other popular dynamic languages.
 It can be run as a interpreter or 'server' mode, it comes with type 4 JDBC driver for ease of integration with java applications.
 
 

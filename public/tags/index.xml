@@ -1,112 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Phatnom SQL Documentation</title>
-    <link>http://phantomsql.com/tags/</link>
-    <description>Recent content in Tags on Phatnom SQL Documentation</description>
+    <title>Tags on Delven Documentation</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Released under the MIT license</copyright>
     
-	<atom:link href="http://phantomsql.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Attributes</title>
-      <link>http://phantomsql.com/tags/attributes/</link>
+      <link>/tags/attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/attributes/</guid>
+      <guid>/tags/attributes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>http://phantomsql.com/tags/css/</link>
+      <link>/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/css/</guid>
+      <guid>/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>http://phantomsql.com/tags/development/</link>
+      <link>/tags/development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/development/</guid>
+      <guid>/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dropdown</title>
-      <link>http://phantomsql.com/tags/dropdown/</link>
+      <link>/tags/dropdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/dropdown/</guid>
+      <guid>/tags/dropdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamic</title>
-      <link>http://phantomsql.com/tags/dynamic/</link>
+      <link>/tags/dynamic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/dynamic/</guid>
+      <guid>/tags/dynamic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Event Handling</title>
-      <link>http://phantomsql.com/tags/event-handling/</link>
+      <link>/tags/event-handling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/event-handling/</guid>
+      <guid>/tags/event-handling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Eventflow</title>
-      <link>http://phantomsql.com/tags/eventflow/</link>
+      <link>/tags/eventflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/eventflow/</guid>
+      <guid>/tags/eventflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Events</title>
-      <link>http://phantomsql.com/tags/events/</link>
+      <link>/tags/events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/events/</guid>
+      <guid>/tags/events/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>http://phantomsql.com/tags/javascript/</link>
+      <link>/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/javascript/</guid>
+      <guid>/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selectors</title>
-      <link>http://phantomsql.com/tags/selectors/</link>
+      <link>/tags/selectors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/selectors/</guid>
+      <guid>/tags/selectors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Textbox</title>
-      <link>http://phantomsql.com/tags/textbox/</link>
+      <link>/tags/textbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/tags/textbox/</guid>
+      <guid>/tags/textbox/</guid>
       <description></description>
     </item>
     

@@ -1,40 +1,47 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.20.1" />
-    <meta name="description" content="">
-<meta name="author" content="Grzegorz Bugbaj">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="description" content="Documentation for Delven Data Extract Engine">
+<meta name="author" content="Greg Bugaj">
 
-    <link rel="shortcut icon" href="http://phantomsql.com/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Dropdown :: Delven Documentation</title>
 
     
-    <title>Welcome to PhantomSQL</title>
-    <link href="http://phantomsql.com//css/nucleus.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/hybrid.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/featherlight.min.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/perfect-scrollbar.min.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/horsey.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/theme.css" rel="stylesheet">
-    <link href="http://phantomsql.com//css/hugo-theme.css" rel="stylesheet">
-    <script src="http://phantomsql.com//js/jquery-2.x.min.js"></script>
-    <style type="text/css">:root #header + #content > #left > #rlblock_left
-    {display:none !important;}</style>
+    <link href="/css/nucleus.css?1557219387" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1557219387" rel="stylesheet">
+    <link href="/css/hybrid.css?1557219387" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1557219387" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1557219387" rel="stylesheet">
+    <link href="/css/auto-complete.css?1557219387" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1557219387" rel="stylesheet">
+    <link href="/css/theme.css?1557219387" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1557219387" rel="stylesheet">
     
 
+    <script src="/js/jquery-3.3.1.min.js?1557219387"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
   </head>
-  <body class="" data-url="/index/">
-    
-    <nav id="sidebar">
+  <body class="" data-url="/tags/dropdown/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
   <div id="header-wrapper">
     <div id="header">
-      <a id="logo" href="http://getgrav.org">
-  <svg id="grav-logo" width="100%" height="100%" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+      <a id="logo" href="/">
+  <svg id="grav-logo" style="width:100%; height:100%;" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
     <path d="M235.832,71.564l-7.98,-0.001c-1.213,0.001 -2.197,0.987 -2.197,2.204l0,15.327l-0.158,0.132c-4.696,3.962 -10.634,6.14 -16.719,6.14c-14.356,0 -26.034,-11.68 -26.034,-26.037c0,-14.358 11.678,-26.035 26.034,-26.035c5.582,0 10.919,1.767 15.437,5.113c0.877,0.649 2.093,0.56 2.866,-0.211l5.69,-5.69c0.444,-0.442 0.675,-1.055 0.639,-1.681c-0.034,-0.627 -0.336,-1.206 -0.828,-1.597c-6.76,-5.363 -15.214,-8.314 -23.805,-8.314c-21.18,0 -38.414,17.233 -38.414,38.415c0,21.183 17.234,38.415 38.414,38.415c10.937,0 21.397,-4.705 28.698,-12.914c0.358,-0.403 0.556,-0.921 0.556,-1.46l0,-19.603c0,-1.217 -0.985,-2.203 -2.2,-2.203"
       style="fill:#000;fill-rule:nonzero;"></path>
     <path d="M502.794,34.445c-0.408,-0.616 -1.1,-0.989 -1.838,-0.989l-8.684,0c-0.879,0 -1.673,0.522 -2.022,1.329l-24.483,56.839l-24.92,-56.852c-0.352,-0.799 -1.142,-1.316 -2.012,-1.316l-8.713,0c-0.744,0 -1.44,0.373 -1.843,0.995c-0.408,0.623 -0.476,1.408 -0.174,2.09l30.186,68.858c0.352,0.799 1.143,1.317 2.017,1.317l10.992,0c0.879,0 1.673,-0.527 2.021,-1.329l29.655,-68.861c0.289,-0.68 0.222,-1.461 -0.182,-2.081"
@@ -55,122 +62,1792 @@
 
     </div>
     
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
+<script type="text/javascript" src="/js/lunr.min.js?1557219387"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1557219387"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1557219387"></script>
 
-  <div class="highlightable">
+    
+  </div>
+
+    <div class="highlightable">
     <ul class="topics">
-      
-        
-        
-          
 
         
           
-
-        
           
 
-        
-          
 
+ 
+  
+    
+    <li data-nav-id="/api-reference/" title="API Reference" class="dd-item 
         
+        
+        
+        ">
+      <a href="/api-reference/">
+          API Reference
           
-
-        
+            <i class="fas fa-check read-icon"></i>
           
-
-        
-          
-
-        
-        
-        
+      </a>
       
       
-      
-    </ul>
-    <hr>
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/api-reference/api-endpoints/" title="API Endpoint" class="dd-item ">
+        <a href="/api-reference/api-endpoints/">
+        API Endpoint
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
      
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/meta/" title="About PhantomSQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/meta/">
+          About PhantomSQL
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/meta/building/" title="Building" class="dd-item ">
+        <a href="/meta/building/">
+        Building
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/meta/license/" title="License" class="dd-item ">
+        <a href="/meta/license/">
+        License
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/meta/references/" title="References" class="dd-item ">
+        <a href="/meta/references/">
+        References
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/meta/release-notes/" title="Release Notes" class="dd-item ">
+        <a href="/meta/release-notes/">
+        Release Notes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/meta/roadmap/" title="Roadmap" class="dd-item ">
+        <a href="/meta/roadmap/">
+        Roadmap
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/event-flow/" title="EVENTFLOW" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/event-flow/">
+          EVENTFLOW
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/element-attributes/" title="Attributes" class="dd-item ">
+        <a href="/event-flow/element-attributes/">
+        Attributes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/buttons/" title="Buttons" class="dd-item ">
+        <a href="/event-flow/buttons/">
+        Buttons
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/dropdown/" title="Dropdown" class="dd-item ">
+        <a href="/event-flow/dropdown/">
+        Dropdown
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/element-selection/" title="Element Selection" class="dd-item ">
+        <a href="/event-flow/element-selection/">
+        Element Selection
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/event-handling/" title="Event Handling" class="dd-item ">
+        <a href="/event-flow/event-handling/">
+        Event Handling
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/executing-javascript/" title="JavaScript Execution" class="dd-item ">
+        <a href="/event-flow/executing-javascript/">
+        JavaScript Execution
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/keypress-events/" title="Keypress Events" class="dd-item ">
+        <a href="/event-flow/keypress-events/">
+        Keypress Events
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/event-flow/textbox/" title="Textbox" class="dd-item ">
+        <a href="/event-flow/textbox/">
+        Textbox
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/crawling/" title="Crawling" class="dd-item ">
+        <a href="/getting-started/crawling/">
+        Crawling
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/form-submission/" title="Form submission" class="dd-item ">
+        <a href="/getting-started/form-submission/">
+        Form submission
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/joining/" title="Joining data" class="dd-item ">
+        <a href="/getting-started/joining/">
+        Joining data
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/retrieving-videos/" title="Retrieving videos" class="dd-item ">
+        <a href="/getting-started/retrieving-videos/">
+        Retrieving videos
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/storing-results/" title="Storing data" class="dd-item ">
+        <a href="/getting-started/storing-results/">
+        Storing data
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/language-elements/" title="Language Elements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/language-elements/">
+          Language Elements
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language-elements/comparsion-operators/" title="Comparison Operators" class="dd-item ">
+        <a href="/language-elements/comparsion-operators/">
+        Comparison Operators
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language-elements/coversions/" title="Implicit Conversion" class="dd-item ">
+        <a href="/language-elements/coversions/">
+        Implicit Conversion
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language-elements/pseudocolumns/" title="Pseudocolumns" class="dd-item ">
+        <a href="/language-elements/pseudocolumns/">
+        Pseudocolumns
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language-elements/table-designators/" title="Table designators" class="dd-item ">
+        <a href="/language-elements/table-designators/">
+        Table designators
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/syntax/" title="Syntax Reference" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/syntax/">
+          Syntax Reference
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/crawl/" title="CRAWL" class="dd-item ">
+        <a href="/syntax/crawl/">
+        CRAWL
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/datatypes/" title="Data Types" class="dd-item ">
+        <a href="/syntax/datatypes/">
+        Data Types
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/from/" title="FROM" class="dd-item ">
+        <a href="/syntax/from/">
+        FROM
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/insert/" title="INSERT" class="dd-item ">
+        <a href="/syntax/insert/">
+        INSERT
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/join/" title="JOIN" class="dd-item ">
+        <a href="/syntax/join/">
+        JOIN
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/native/" title="NATIVE" class="dd-item ">
+        <a href="/syntax/native/">
+        NATIVE
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/options/" title="OPTIONS" class="dd-item ">
+        <a href="/syntax/options/">
+        OPTIONS
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/select/" title="SELECT" class="dd-item ">
+        <a href="/syntax/select/">
+        SELECT
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/subquery/" title="SUBQUERIES" class="dd-item ">
+        <a href="/syntax/subquery/">
+        SUBQUERIES
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/using/" title="USING" class="dd-item ">
+        <a href="/syntax/using/">
+        USING
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/watch/" title="WATCH" class="dd-item ">
+        <a href="/syntax/watch/">
+        WATCH
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/where/" title="WHERE" class="dd-item ">
+        <a href="/syntax/where/">
+        WHERE
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/with/" title="WITH" class="dd-item ">
+        <a href="/syntax/with/">
+        WITH
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syntax/within/" title="WITHIN" class="dd-item ">
+        <a href="/syntax/within/">
+        WITHIN
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
     <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
 
     </section>
   </div>
 </nav>
 
+
+
+
+
         <section id="body">
         <div id="overlay"></div>
-
         <div class="padding highlightable">
-
-            <div id="top-bar">
               
-              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                  <span id="sidebar-toggle-span">
-                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
-                        <i class="fa fa-bars"></i>
-                      </a>
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            Dropdown
+          
+        
+                 
                   </span>
+                </div>
                 
-                
-                <span itemprop="title"> Welcome to PhantomSQL</span>
-              </div>
-              
+                    <div class="progress">
+    <div class="wrapper">
 
+    </div>
+</div>
+
+                
+              </div>
             </div>
             
-              <div id="body-inner">
-                
-                <h1>Welcome to PhantomSQL</h1>
-                
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+                taxonomy ::
+              
+              Dropdown
+            </h1>
+          
 
-<p>PhantomSQL is a Domain Specific Language  (DSL) designed for mining content from static and dynamic sources, It closely resembles SQL with features borrowed from other popular dynamic languages.
-It can be run as a interpreter or &lsquo;server&rsquo; mode, it comes with type 4 JDBC driver for ease of integration with java applications.</p>
+        
 
-<p>This documentation is your guide to an advanced new world of real-time data connectivity.</p>
+
+
+
+
 
 <ul>
-<li>To get an idea of what PhantomSQL is and how it can benefit your organization, visit the Introduction Section page.</li>
-<li>New users and experienced users alike may refer to the <a href="http://phantomsql.com/syntax">Syntax</a> section for all the information you need to create robust queries.</li>
-<li>For new users, the <a href="http://phantomsql.com/examples">Tutorial</a> provides an introduction to basic query writing skills and a page of sample queries to get you started.</li>
-<li>Programmers interested in embedding PhantomSQL within their application should visit the <a href="http://phantomsql.com/api">API Reference</a>.</li>
+	
+		<li><a href="/event-flow/dropdown/">Dropdown</a></li>
+	
 </ul>
 
 
-      
-      
-      </div>
-    </div>
+<footer class=" footline" >
+	
+</footer>
 
-    
+        
+        </div> 
+        
+
+      </div>
 
     <div id="navigation">
         
         
         
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+		
+			<a class="nav nav-next" href="/api-reference/" title="API Reference" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
     </div>
 
     </section>
+    
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://phantomsql.com//js/clipboard.min.js"></script>
-    <script src="http://phantomsql.com//js/perfect-scrollbar.min.js"></script>
-    <script src="http://phantomsql.com//js/perfect-scrollbar.jquery.min.js"></script>
-    <script src="http://phantomsql.com//js/jquery.sticky-kit.min.js"></script>
-    <script src="http://phantomsql.com//js/featherlight.min.js"></script>
-    <script src="http://phantomsql.com//js/html5shiv-printshiv.min.js"></script>
-    <script src="http://phantomsql.com//js/highlight.pack.js"></script>
+    <script src="/js/clipboard.min.js?1557219387"></script>
+    <script src="/js/perfect-scrollbar.min.js?1557219387"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1557219387"></script>
+    <script src="/js/jquery.sticky.js?1557219387"></script>
+    <script src="/js/featherlight.min.js?1557219387"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1557219387"></script>
+    <script src="/js/highlight.pack.js?1557219387"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://phantomsql.com//js/modernizr.custom.71422.js"></script>
-    <script src="http://phantomsql.com//js/learn.js"></script>
-    <script src="http://phantomsql.com//js/hugo-learn.js"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1557219387"></script>
+    <script src="/js/learn.js?1557219387"></script>
+    <script src="/js/hugo-learn.js?1557219387"></script>
+
+    <link href="/mermaid/mermaid.css?1557219387" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1557219387"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
     
 
   </body>
 </html>
-
-
-
-

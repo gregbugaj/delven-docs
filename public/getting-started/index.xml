@@ -1,68 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting-started on Phatnom SQL Documentation</title>
-    <link>http://phantomsql.com/getting-started/</link>
-    <description>Recent content in Getting-started on Phatnom SQL Documentation</description>
+    <title>Introduction on Delven Documentation</title>
+    <link>/getting-started/</link>
+    <description>Recent content in Introduction on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Released under the MIT license</copyright>
     
-	<atom:link href="http://phantomsql.com/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Crawling</title>
-      <link>http://phantomsql.com/getting-started/crawling/</link>
+      <link>/getting-started/crawling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/getting-started/crawling/</guid>
+      <guid>/getting-started/crawling/</guid>
       <description>Crawling data is awesome</description>
     </item>
     
     <item>
       <title>Form submission</title>
-      <link>http://phantomsql.com/getting-started/form-submission/</link>
+      <link>/getting-started/form-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/getting-started/form-submission/</guid>
+      <guid>/getting-started/form-submission/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Introduction</title>
-      <link>http://phantomsql.com/getting-started/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://phantomsql.com/getting-started/index/</guid>
-      <description>GETTING INTRO This tutorial uses examples of the SELECT, INTO, and FROM clauses, and demonstrates how to do the following:
- Selecting data Crawling documents Submitting forms Joining queries Storing results  </description>
-    </item>
-    
-    <item>
       <title>Joining data</title>
-      <link>http://phantomsql.com/getting-started/joining/</link>
+      <link>/getting-started/joining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/getting-started/joining/</guid>
+      <guid>/getting-started/joining/</guid>
       <description>While you can create basic queries using one select segment, joining select statements together allows you to create more complex queries.</description>
     </item>
     
     <item>
       <title>Retrieving videos</title>
-      <link>http://phantomsql.com/getting-started/retrieving-videos/</link>
+      <link>/getting-started/retrieving-videos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/getting-started/retrieving-videos/</guid>
+      <guid>/getting-started/retrieving-videos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Storing data</title>
-      <link>http://phantomsql.com/getting-started/storing-results/</link>
+      <link>/getting-started/storing-results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phantomsql.com/getting-started/storing-results/</guid>
+      <guid>/getting-started/storing-results/</guid>
       <description></description>
     </item>
     

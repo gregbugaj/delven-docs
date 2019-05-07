@@ -5,4 +5,4 @@ weight: 0
 ---
 
 
-This section discusses Application Programming Interfaces (APIs) that control PhantomSQL
+This section discusses Application Programming Interfaces (APIs) that control Delven
