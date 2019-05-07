@@ -1,0 +1,9 @@
+baseurl = "http://phantomsql.com/"
+languageCode = "en-us"
+title = "PhantomSQL Documentation"
+#theme = "hugo-material-docs"
+theme = "hugo-theme-learn"
+metadataformat = "yaml"
+pluralizeListTitles = false
+canonifyurls = true
+search = true

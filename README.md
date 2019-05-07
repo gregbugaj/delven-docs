@@ -1,6 +1,11 @@
 =======
 Docs build using http://www.sphinx-doc.org
 
+Good setup and development practices
+https://www.jhipster.tech
+
+
+
 == nginx config
 
 ```

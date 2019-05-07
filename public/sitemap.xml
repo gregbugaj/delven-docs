@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://phantomsql.com/api-reference/api-endpoints/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/api-reference/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/api-reference/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/attributes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/element-attributes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/building/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/buttons/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/crawl/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/language-elements/comparsion-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/crawling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/css/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/datatypes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/development/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/dropdown/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/dropdown/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/dynamic/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/element-selection/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/event-handling/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/event-handling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/eventflow/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/events/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/from/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/form-submission/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/insert/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/language-elements/coversions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/join/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/executing-javascript/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/javascript/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/joining/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/keypress-events/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/language-elements/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/language-elements/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/license/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/native/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/options/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/language-elements/pseudocolumns/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/references/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/retrieving-videos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/meta/roadmap/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/select/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/subquery/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/selectors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/getting-started/storing-results/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/index/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/language-elements/table-designators/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/tags/textbox/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/event-flow/textbox/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/using/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/watch/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/where/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/with/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/syntax/within/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phantomsql.com/index/</loc>
+  </url>
+  
+</urlset>

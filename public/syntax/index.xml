@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Syntax on Phatnom SQL Documentation</title>
+    <link>http://phantomsql.com/syntax/</link>
+    <description>Recent content in Syntax on Phatnom SQL Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    
+	<atom:link href="http://phantomsql.com/syntax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CRAWL</title>
+      <link>http://phantomsql.com/syntax/crawl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/crawl/</guid>
+      <description>PhantomSQL can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax:
+Specification    Name Spec Data Types Default Description     depth optional [Number] 2 How deep will the link be followed   follow optional [String] All links Selector to follow   using optional [Object] N/A USING clause    CRAWL { &amp;quot;depth&amp;quot; : 2, &amp;quot;follow&amp;quot; : css(&amp;quot;#comments a&amp;quot;) }  Basic usage This query retrieves data by crawling three layers deep within a web site:</description>
+    </item>
+    
+    <item>
+      <title>Data Types</title>
+      <link>http://phantomsql.com/syntax/datatypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/datatypes/</guid>
+      <description> Data types used
+URL { http://www.phantomsql.com }  String { &amp;quot;key&amp;quot; : &amp;quot;String Value&amp;quot; }  Numeric { &amp;quot;key&amp;quot; : 12345 }  Boolean { &amp;quot;key&amp;quot; : true | false }  Object of Key:Value { &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, } }  Array of Strings { &amp;quot;headers&amp;quot;: [ &amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot; ] }  </description>
+    </item>
+    
+    <item>
+      <title>FROM</title>
+      <link>http://phantomsql.com/syntax/from/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/from/</guid>
+      <description>The FROM clause is used to specifyg source and any joined sources.
+Syntax FROM &amp;lt;from_specification&amp;gt; &amp;lt;from_specification&amp;gt; ::= &amp;lt;from_source&amp;gt; {[ JOIN &amp;lt;from_source&amp;gt;][,...n]} &amp;lt;from_source&amp;gt; ::= &amp;lt;collection_expression&amp;gt; [[AS] input_alias] | input_alias IN &amp;lt;collection_expression&amp;gt; &amp;lt;collection_expression&amp;gt; ::= ROOT | collection_name | input_alias | &amp;lt;collection_expression&amp;gt; &#39;.&#39; property_name | &amp;lt;collection_expression&amp;gt; &#39;[&#39; &amp;quot;property_name&amp;quot; | array_index &#39;]&#39;  Arguments &amp;lt;from_source&amp;gt;
+Specifies a data source, with or without an alias. If alias is not specified, it will be inferred from the  using following rules:</description>
+    </item>
+    
+    <item>
+      <title>INSERT</title>
+      <link>http://phantomsql.com/syntax/insert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/insert/</guid>
+      <description>PhantomSQL uses a simple syntax to store results. The INTO clause always comes after the SELECT statement. Extraction results are stored in collections, collection is a container for a JSON documents.
+Syntax Examples Inserting This is minimalistic example of our INSERT clause.
+SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html INSERT HeaderCollection  This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
+    </item>
+    
+    <item>
+      <title>JOIN</title>
+      <link>http://phantomsql.com/syntax/join/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/join/</guid>
+      <description>While you can create basic queries using one select segment, joining select statements together allows you to create more complex queries.
+A join clause take two soures as inputs. All joins are equijoins and all oprations are &amp;lsquo;AND&amp;rsquo; operations.
+Types of supported joins.
+ Inner join Left outer join Group join  Syntax Inner join Inner join produces a result set in which each element of the first collection appears one time for every matching element in the second collection.</description>
+    </item>
+    
+    <item>
+      <title>NATIVE</title>
+      <link>http://phantomsql.com/syntax/native/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/native/</guid>
+      <description> NATIVE clause allows us to execute Javascript directly on the loaded document
+See JavaScript Execution for details and examples
+Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html NATIVE &amp;quot;script.js&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>OPTIONS</title>
+      <link>http://phantomsql.com/syntax/options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/options/</guid>
+      <description> Certain options are Enabled/Disabled by default and they can be controlled with OPTIONS clause.
+Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &amp;quot;OptionName2&amp;quot; : &amp;quot;Value&amp;quot; }  Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  </description>
+    </item>
+    
+    <item>
+      <title>SELECT</title>
+      <link>http://phantomsql.com/syntax/select/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/select/</guid>
+      <description>Selector Functions    Name Spec Data Types Value Description     css requied [String, Object] CSS Selector GET, POST, PUT, HEAD, OPTIONS, DELETE   xpath requied [String] XPath 2 Name of the form to target   regex requied [String] Regex (Java) Parameters to pass   headers optional [Array of Strings]  Headers to pass to the request   cookies optional [Array of Strings]  Cookies to pass to the request   response optional [Array of Strings]  Cookies to pass to the request   snapshot optional [Object]  Generates a graphical snapshot of a web page&amp;rsquo;s / selected content    Selectors support two types of of parameters Implicit and Explicit.</description>
+    </item>
+    
+    <item>
+      <title>SUBQUERIES</title>
+      <link>http://phantomsql.com/syntax/subquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/subquery/</guid>
+      <description>A subquery is a SELECT statement written within parentheses and nested inside another statement.
+Subqueries can return different types of information:
+ A scalar subquery returns a single value. A column subquery returns a single column of one or more values. A row subquery returns a single row of one or more values. A table subquery returns a table of one or more rows of one or more columns.  Subquery results can be tested in different ways:</description>
+    </item>
+    
+    <item>
+      <title>Syntax Reference</title>
+      <link>http://phantomsql.com/syntax/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>USING</title>
+      <link>http://phantomsql.com/syntax/using/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/using/</guid>
+      <description>Specifies the condition used to retieve the URL. USING clause used JSON like format for specifying the clause.
+Specification    Name Spec Data Types Value Default Description     method optional [String] HTTP Verb GET GET, POST, PUT, HEAD, OPTIONS, DELETE   form optional [String] Form Name main Name of the form to target   params optional [Object of Key:Value]   Parameters to pass   headers optional [Array of Strings]   Headers to pass to the request   cookies optional [Array of Strings]   Cookies to pass to the request    Parameter structure { &amp;quot;method&amp;quot; : &amp;quot;POST&amp;quot;, &amp;quot;form&amp;quot; : &amp;quot;main&amp;quot;, &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, }, &amp;quot;headers&amp;quot; : [&amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot;], &amp;quot;cookies&amp;quot; : [&amp;quot;token=1212&amp;quot;, &amp;quot;another=value&amp;quot;] }  Examples A.</description>
+    </item>
+    
+    <item>
+      <title>WATCH</title>
+      <link>http://phantomsql.com/syntax/watch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/watch/</guid>
+      <description>WATCH clause allows us to monitor changes to the underlying content.
+   Name Spec Data Types Default Description     selector required `Object Function`    interval optional [String] 12:00:00 Interval of how ofter to check for updates   time optional [String] 12:00:00 Time of day of when to check for update   method optional [String] value Watch Type    Usage The following example setups a WATCH to be executed every 30 seconds.</description>
+    </item>
+    
+    <item>
+      <title>WHERE</title>
+      <link>http://phantomsql.com/syntax/where/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/where/</guid>
+      <description>Specifies the search condition for the rows returned by the query.
+ Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;)  SELECT css(&#39;#title&#39;) as title FROM http://www.phantomsql.com/test/index-01.html WITHIN css(&amp;quot;.content-container&amp;quot;) WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;h1&amp;quot;) as header FROM http://www.</description>
+    </item>
+    
+    <item>
+      <title>WITH</title>
+      <link>http://phantomsql.com/syntax/with/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/with/</guid>
+      <description>Common Table Expressions
+A common table expression (CTE) can be thought of as a temporary result set that is defined within the execution scope of a single SELECT. CTE can be self-referencing and can be referenced multiple times in the same query.
+Arguments expression_name Is a valid identifier for the common table expression. expression_name must be different from the name of any other common table expression defined in the same WITH clause</description>
+    </item>
+    
+    <item>
+      <title>WITHIN</title>
+      <link>http://phantomsql.com/syntax/within/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/syntax/within/</guid>
+      <description> WITHIN clause is used to narrow results down
+Basic usage SELECT css(&#39;#title&#39;) as title WITHIN css(&amp;quot;.content-container&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html  Multiple filters SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.phantomsql.com/test/index-01.html  SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container-a .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;) OR css(&amp;quot;.content-container-b .title&amp;quot;) LIKE (&#39;Test 3&#39;, &#39;Test 4&#39;)  </description>
+    </item>
+    
+  </channel>
+</rss>

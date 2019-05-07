@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eventflow on Phatnom SQL Documentation</title>
+    <link>http://phantomsql.com/tags/eventflow/</link>
+    <description>Recent content in Eventflow on Phatnom SQL Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    
+	<atom:link href="http://phantomsql.com/tags/eventflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Attributes</title>
+      <link>http://phantomsql.com/event-flow/element-attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/event-flow/element-attributes/</guid>
+      <description> Interacting with Element Attributes
+Parameter Specification    Name Spec Data Types Description     attribute optional Object of Key:Value Set attribute value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;info&amp;quot; value=&amp;quot;&amp;quot; data-a=&amp;quot;Value A&amp;quot; data-b=&amp;quot;Value B&amp;quot;&amp;gt;  Setting Attribute Values SELECT css(&amp;quot;#info[data-a]&amp;quot;) as aval, css(&amp;quot;#info[data-b]&amp;quot;) as bval FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#info&amp;quot;, &amp;quot;attribute&amp;quot;: { &amp;quot;data-a&amp;quot;: &amp;quot;New Value A&amp;quot;, &amp;quot;data-b&amp;quot;: &amp;quot;New Value B&amp;quot; } } ]  Results { &amp;quot;aval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value A&amp;quot; }, &amp;quot;bval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value B&amp;quot; } }  </description>
+    </item>
+    
+    <item>
+      <title>Buttons</title>
+      <link>http://phantomsql.com/event-flow/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/event-flow/buttons/</guid>
+      <description>Interacting with Buttons
+Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
+    </item>
+    
+    <item>
+      <title>Dropdown</title>
+      <link>http://phantomsql.com/event-flow/dropdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/event-flow/dropdown/</guid>
+      <description>Interacting with Dropdowns
+Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description     selectByIndex optional [Number] Select Option by Index   selectByValue optional [String] Select Option by Option Value   selectByText optional [String] Select Value by Option Text    Example &amp;lt;select id=&amp;quot;vehicles&amp;quot;&amp;gt; &amp;lt;option value=&amp;quot;opt-volvo&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-saab&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-vw&amp;quot;&amp;gt;VW&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-audi&amp;quot;&amp;gt;Audi&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt;  Select Option by Index SELECT css(&amp;quot;#vehicles option:selected&amp;quot;) FROM http://www.</description>
+    </item>
+    
+    <item>
+      <title>Event Handling</title>
+      <link>http://phantomsql.com/event-flow/event-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/event-flow/event-handling/</guid>
+      <description>Event Handling
+Mouse Events    Event Name Fired When     click A pointing device button has been pressed and released on an element.   mouseover A pointing device is moved onto the element that has the listener attached or onto one of its children.    Events use a special syntax &amp;quot;event[ID]&amp;quot; : &amp;quot;EVENTNAME&amp;quot; this allows us to specify multiple events in more compact way when multiple events are required on an object to be invoked.</description>
+    </item>
+    
+    <item>
+      <title>Textbox</title>
+      <link>http://phantomsql.com/event-flow/textbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/event-flow/textbox/</guid>
+      <description>Interacting with Texboxes
+Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
+    </item>
+    
+  </channel>
+</rss>

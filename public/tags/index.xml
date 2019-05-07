@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Phatnom SQL Documentation</title>
+    <link>http://phantomsql.com/tags/</link>
+    <description>Recent content in Tags on Phatnom SQL Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    
+	<atom:link href="http://phantomsql.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Attributes</title>
+      <link>http://phantomsql.com/tags/attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/attributes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>http://phantomsql.com/tags/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>http://phantomsql.com/tags/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dropdown</title>
+      <link>http://phantomsql.com/tags/dropdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/dropdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic</title>
+      <link>http://phantomsql.com/tags/dynamic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/dynamic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event Handling</title>
+      <link>http://phantomsql.com/tags/event-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/event-handling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eventflow</title>
+      <link>http://phantomsql.com/tags/eventflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/eventflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://phantomsql.com/tags/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://phantomsql.com/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selectors</title>
+      <link>http://phantomsql.com/tags/selectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/selectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textbox</title>
+      <link>http://phantomsql.com/tags/textbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phantomsql.com/tags/textbox/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
