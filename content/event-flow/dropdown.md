@@ -36,7 +36,7 @@ Interacting with Dropdowns
 ### Select Option by Index {#select-by-index}
 
 ```sql
-SELECT css("#vehicles option:selected") FROM http://www.phantomsql.com/test/execute.html 
+SELECT css("#vehicles option:selected") FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 {
   {
@@ -54,7 +54,7 @@ EVENTFLOW
 ### Select Option by Option Value {#select-by-value}
 
 ```sql
-SELECT css("#vehicles option:selected")  FROM http://www.phantomsql.com/test/execute.html 
+SELECT css("#vehicles option:selected")  FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 {
   {
@@ -71,7 +71,7 @@ EVENTFLOW
 ### Select Value  by Option Text {#select-by-text}
 
 ```sql
-SELECT css("#vehicles option:selected")  FROM http://www.phantomsql.com/test/execute.html 
+SELECT css("#vehicles option:selected")  FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 {
   {

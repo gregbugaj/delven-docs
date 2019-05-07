@@ -8,7 +8,7 @@ menu:
     parent: language-elements
 ---
 
-In addition to columns provided by input objects, PhantomSQL provides pseudocolumns, which expressions can also reference. 
+In addition to columns provided by input objects, Delven provides pseudocolumns, which expressions can also reference. 
 Some pseudocolumns are only available to expressions in certain contexts. Others are generally available to any expression. 
 
 ## Specification

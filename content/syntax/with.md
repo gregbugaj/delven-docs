@@ -35,7 +35,7 @@ The CTE expression 'data_cte' has two columns (title, note) and is defined as ex
 WITH data_cte (title, note) 
 (
     SELECT css("#title") as title, css("#note") as note
-    FROM  http://www.phantomsql.com/test/index-01.html
+    FROM  http://www.delven.io/test/index-01.html
 )
 
 SELECT * FROM data_cte
@@ -48,7 +48,7 @@ The following example shows more complex CTE query.
 WITH OauthData (token)
 (
     SELECT  data as token
-    FROM http://www.phantomsql.com/test/index-01.html
+    FROM http://www.delven.io/test/index-01.html
     USING :
     {
         "method" : "POST",
@@ -74,13 +74,13 @@ Multiple CTE's can be specified by separating them with a comma.
 WITH data_A (title, note) 
 (
     SELECT css("#title") as title, css("#description") as note
-    FROM  http://www.phantomsql.com/test/index-01.html
+    FROM  http://www.delven.io/test/index-01.html
 ),
 
 data_B (title, note) 
 (
     SELECT css("#title") as title, css("#detail") as note
-    FROM  http://www.phantomsql.com/test/index-02.html
+    FROM  http://www.delven.io/test/index-02.html
 )
 
 ```

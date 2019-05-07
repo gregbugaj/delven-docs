@@ -10,9 +10,9 @@ menu:
 tags : [ "Development", "javascript", "selectors" ]
 ---
 
-How to use Selector in PhantomSQL
+How to use Selector in Delven
 
-Selectors tell PhantomSQL which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in [SELECT](/syntax/select) clause.
+Selectors tell Delven which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in [SELECT](/syntax/select) clause.
 
 ## Selector types
 
@@ -46,7 +46,7 @@ For concreate example for specific types visit.
 
 ## CSS Selector {#by-css}
 
-In PhantomSQL, css selectors are patterns used to select the element(s) you want to interact with.
+In Delven, css selectors are patterns used to select the element(s) you want to interact with.
 
 | Selector       	            | Example               | Description                                 | Reference
 | --------------------------- | --------------------- | ------------------------------------------- | ------------------
@@ -63,7 +63,7 @@ In PhantomSQL, css selectors are patterns used to select the element(s) you want
 ### Selector by CSS classname
 
 ```sql
-SELECT * FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css" : ".class-one"   
@@ -74,7 +74,7 @@ SELECT * FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
 ### Selector by CSS id
 
 ```sql
-SELECT * FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css" : "#id1"   
@@ -85,7 +85,7 @@ SELECT * FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
 ### Selector by CSS attribute
 
 ```sql
-SELECT * FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css" : "[redonly=true]"   

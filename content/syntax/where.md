@@ -17,21 +17,21 @@ Specifies the search condition for the rows returned by the query.
 
 ```sql
 SELECT css(".title") as title
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 WHERE css(".content-container .title")
 ```
 
  
 ```sql
 SELECT  css('#title') as title
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 WITHIN css(".content-container")
 WHERE  css(".content-container .title") LIKE ('Test 1', 'Test 2')
 ```
 
 ```sql
 SELECT css(".title") as title
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 WHERE css(".content-container .title") LIKE ('Test 1', 'Test 2')
 ```
 
@@ -39,7 +39,7 @@ WHERE css(".content-container .title") LIKE ('Test 1', 'Test 2')
 
 ```sql
 SELECT css("h1") as header
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 WHERE css({"selector":"#title", "slice":false}) LIKE ('Title 1', 'Title 2', 'Title 3')
 ```
 

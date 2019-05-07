@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/crawl/</guid>
-      <description>PhantomSQL can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax:
+      <description>Delven can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax:
 Specification    Name Spec Data Types Default Description     depth optional [Number] 2 How deep will the link be followed   follow optional [String] All links Selector to follow   using optional [Object] N/A USING clause    CRAWL { &amp;quot;depth&amp;quot; : 2, &amp;quot;follow&amp;quot; : css(&amp;quot;#comments a&amp;quot;) }  Basic usage This query retrieves data by crawling three layers deep within a web site:</description>
     </item>
     
@@ -27,7 +27,7 @@ Specification    Name Spec Data Types Default Description     depth optional [Nu
       
       <guid>/syntax/datatypes/</guid>
       <description> Data types used
-URL { http://www.phantomsql.com }  String { &amp;quot;key&amp;quot; : &amp;quot;String Value&amp;quot; }  Numeric { &amp;quot;key&amp;quot; : 12345 }  Boolean { &amp;quot;key&amp;quot; : true | false }  Object of Key:Value { &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, } }  Array of Strings { &amp;quot;headers&amp;quot;: [ &amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot; ] }  </description>
+URL { http://www.delven.io }  String { &amp;quot;key&amp;quot; : &amp;quot;String Value&amp;quot; }  Numeric { &amp;quot;key&amp;quot; : 12345 }  Boolean { &amp;quot;key&amp;quot; : true | false }  Object of Key:Value { &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, } }  Array of Strings { &amp;quot;headers&amp;quot;: [ &amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot; ] }  </description>
     </item>
     
     <item>
@@ -47,9 +47,9 @@ Specifies a data source, with or without an alias. If alias is not specified, it
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/insert/</guid>
-      <description>PhantomSQL uses a simple syntax to store results. The INTO clause always comes after the SELECT statement. Extraction results are stored in collections, collection is a container for a JSON documents.
+      <description>Delven uses a simple syntax to store results. The INTO clause always comes after the SELECT statement. Extraction results are stored in collections, collection is a container for a JSON documents.
 Syntax Examples Inserting This is minimalistic example of our INSERT clause.
-SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html INSERT HeaderCollection  This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
+SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM http://www.delven.io/test/index-01.html INSERT HeaderCollection  This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@ Types of supported joins.
       <guid>/syntax/native/</guid>
       <description> NATIVE clause allows us to execute Javascript directly on the loaded document
 See JavaScript Execution for details and examples
-Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html NATIVE &amp;quot;script.js&amp;quot;  </description>
+Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html NATIVE &amp;quot;script.js&amp;quot;  </description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp
       
       <guid>/syntax/options/</guid>
       <description> Certain options are Enabled/Disabled by default and they can be controlled with OPTIONS clause.
-Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &amp;quot;OptionName2&amp;quot; : &amp;quot;Value&amp;quot; }  Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  </description>
+Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &amp;quot;OptionName2&amp;quot; : &amp;quot;Value&amp;quot; }  Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  </description>
     </item>
     
     <item>
@@ -132,7 +132,7 @@ Specification    Name Spec Data Types Value Default Description     method optio
       
       <guid>/syntax/where/</guid>
       <description>Specifies the search condition for the rows returned by the query.
- Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;)  SELECT css(&#39;#title&#39;) as title FROM http://www.phantomsql.com/test/index-01.html WITHIN css(&amp;quot;.content-container&amp;quot;) WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;h1&amp;quot;) as header FROM http://www.</description>
+ Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;)  SELECT css(&#39;#title&#39;) as title FROM http://www.delven.io/test/index-01.html WITHIN css(&amp;quot;.content-container&amp;quot;) WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;h1&amp;quot;) as header FROM http://www.</description>
     </item>
     
     <item>
@@ -153,7 +153,7 @@ Arguments expression_name Is a valid identifier for the common table expression.
       
       <guid>/syntax/within/</guid>
       <description> WITHIN clause is used to narrow results down
-Basic usage SELECT css(&#39;#title&#39;) as title WITHIN css(&amp;quot;.content-container&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html  Multiple filters SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.phantomsql.com/test/index-01.html  SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container-a .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;) OR css(&amp;quot;.content-container-b .title&amp;quot;) LIKE (&#39;Test 3&#39;, &#39;Test 4&#39;)  </description>
+Basic usage SELECT css(&#39;#title&#39;) as title WITHIN css(&amp;quot;.content-container&amp;quot;) FROM http://www.delven.io/test/index-01.html  Multiple filters SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.delven.io/test/index-01.html  SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container-a .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;) OR css(&amp;quot;.content-container-b .title&amp;quot;) LIKE (&#39;Test 3&#39;, &#39;Test 4&#39;)  </description>
     </item>
     
   </channel>

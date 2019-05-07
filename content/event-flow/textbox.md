@@ -31,7 +31,7 @@ Interacting with Texboxes
 ### Setting single value
 
 ```sql
-SELECT css("#firstname") FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+SELECT css("#firstname") FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css": "#firstname",
@@ -47,7 +47,7 @@ SELECT css("#firstname") FROM http://www.phantomsql.com/test/execute.html EVENTF
 ### Setting multiple values
 ```sql
 SELECT css("#firstname") as first , css("#lastname") as last 
-FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css": "#firstname",

@@ -37,7 +37,7 @@ Interacting with Buttons
 
 ```sql
 SELECT css("#btn") 
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 [
   {
@@ -57,7 +57,7 @@ Following example will select our `button` and then perform an `click` action.
 
 ```sql
 SELECT css("#btn") 
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 [
   {

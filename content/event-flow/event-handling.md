@@ -41,7 +41,7 @@ Following example will execute single `click` event.
 
 ```sql
 SELECT css("#btn") 
-FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css"    : "#btn",
@@ -56,7 +56,7 @@ Following example will execute three `click` events on selected element.
 
 ```sql
 SELECT css("#btn") 
-FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css"    : "#btn",
@@ -74,7 +74,7 @@ Following example will fire two `click` events in succession on the selected ele
 
 ```sql
 SELECT css("#btn") 
-FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css"    : "#btn",

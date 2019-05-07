@@ -40,7 +40,7 @@ SELECT q1.title, q1.name FROM
 (
 	SELECT  css('#title') as title,  css('#name') as name
 	FROM css('#root-selector')
-	WITHIN http://www.phantomsql.com/test/index-01.html
+	WITHIN http://www.delven.io/test/index-01.html
 ) q1
 ```
 [Run in Console](#console)

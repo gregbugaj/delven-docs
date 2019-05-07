@@ -43,7 +43,7 @@ Specifies a data source, with or without an alias. If alias is not specified, it
 ### Baisc From clause
 
 ```sql
-SELECT  css("#title") FROM  http://www.phantomsql.com/test/index-01.html 
+SELECT  css("#title") FROM  http://www.delven.io/test/index-01.html 
 ```
 
 ### Using a Suquery in the FROM clause
@@ -52,7 +52,7 @@ SELECT  css("#title") FROM  http://www.phantomsql.com/test/index-01.html
   SELECT  css('#title') as title
   FROM 
   (
-    SELECT css('#root-selector') FROM http://www.phantomsql.com/test/index-01.html  
+    SELECT css('#root-selector') FROM http://www.delven.io/test/index-01.html  
   ) AS T1
 ```
 When this query run, the subquery is first run and the results created. The results are then used in the FROM clause.
@@ -65,7 +65,7 @@ This is equivalent to using a subquery version
 ```sql
   SELECT  css('#title') as title
   FROM css('#root-selector')
-  WITHIN http://www.phantomsql.com/test/index-01.html  
+  WITHIN http://www.delven.io/test/index-01.html  
 ```
 
 ### Composite FROM clause
@@ -76,11 +76,11 @@ Here we simply  select data from two separate soures and return them.
 SELECT * FROM 
 (
 	  SELECT  css("#title") as title, css("#title a") as links
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 ) AS T1 ,
 (
 	  SELECT  css("#title") as title, css("#title a") as links 
-    FROM  http://www.phantomsql.com/test/index-02.html 
+    FROM  http://www.delven.io/test/index-02.html 
 ) AS T2
 ```
 
@@ -93,12 +93,12 @@ You can also join two derived tables together using `WHERE` clause or a `JOIN` c
 SELECT * FROM 
 (
 	  SELECT  css("#title") as title, css("#title a") as links 
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 ) AS T1
 ,
 (
 	  SELECT  css("#title") as title, css("#title a") as links
-     FROM  http://www.phantomsql.com/test/index-02.html 
+     FROM  http://www.delven.io/test/index-02.html 
 ) AS T2
 
 WHERE T1.title = T2.title
@@ -110,12 +110,12 @@ WHERE T1.title = T2.title
 SELECT * FROM 
 (
 	  SELECT  css("#title") as title, css("#title a") as links 
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 ) AS T1
 JOIN
 (
 	   SELECT  css("#title") as title, css("#title a") as links
-     FROM  http://www.phantomsql.com/test/index-02.html 
+     FROM  http://www.delven.io/test/index-02.html 
 ) AS T2 AS  ON 
 {
 	"left"    : {"title" : T1.title},

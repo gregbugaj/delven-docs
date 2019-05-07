@@ -17,7 +17,7 @@
       
       <guid>/event-flow/buttons/</guid>
       <description>Interacting with Buttons
-Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
+Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ Mouse Events    Event Name Fired When     click A pointing device button has bee
       
       <guid>/event-flow/textbox/</guid>
       <description>Interacting with Texboxes
-Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
+Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
     </item>
     
   </channel>

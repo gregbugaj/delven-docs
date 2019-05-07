@@ -28,7 +28,7 @@ Interacting with Element Attributes
 
 ```sql
 SELECT css("#info[data-a]") as aval, css("#info[data-b]") as bval 
-FROM http://www.phantomsql.com/test/execute.html EVENTFLOW
+FROM http://www.delven.io/test/execute.html EVENTFLOW
 [
   {
     "by-css": "#info",

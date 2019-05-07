@@ -5,7 +5,7 @@ type: page
 toc : true
 ---
 
-PhantomSQL can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax: 
+Delven can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax: 
 
  
 ## Specification
@@ -31,7 +31,7 @@ This query retrieves data by crawling three layers deep within a web site:
 
 ```sql
 SELECT  css('#title') as title
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 CRAWL
 {
     depth : 3
@@ -42,7 +42,7 @@ CRAWL
 
 ```sql
 SELECT  css("#title") as title
-FROM http://www.phantomsql.com/test/index-01.html
+FROM http://www.delven.io/test/index-01.html
 CRAWL
 {
     depth  : 2
@@ -55,9 +55,9 @@ Script that will crawl to depth 2 over all supplied links
 SELECT  css("#title") as title
 FROM
 [
-    http://www.phantomsql.com/test/index-01.html,
-    http://www.phantomsql.com/test/index-02.html,
-    http://www.phantomsql.com/test/index-03.html
+    http://www.delven.io/test/index-01.html,
+    http://www.delven.io/test/index-02.html,
+    http://www.delven.io/test/index-03.html
 ]
 CRAWL
 {
@@ -71,7 +71,7 @@ CRAWL
 
 ```sql
 SELECT  css("#title") as title
-FROM http://www.phantomsql.com/test/index-01.html
+FROM http://www.delven.io/test/index-01.html
 CRAWL
 {
     depth  : 2

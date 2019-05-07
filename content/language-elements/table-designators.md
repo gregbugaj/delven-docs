@@ -21,12 +21,12 @@ One reason for qualifying a column name is to designate the object from which th
 This example show how ambiguity is resolved for single source.
 
 ```sql
-SELECT * FROM  http://www.phantomsql.com/test/index-01.html
+SELECT * FROM  http://www.delven.io/test/index-01.html
 WHERE css('#title') IN ('Title 1', 'Title 2', 'Title 3')
 ```
 
 ```sql
-SELECT * FROM  http://www.phantomsql.com/test/index-01.html  AS T1
+SELECT * FROM  http://www.delven.io/test/index-01.html  AS T1
 WHERE T1.css('#title') IN ('Title 1', 'Title 2', 'Title 3')
 ```
 
@@ -36,11 +36,11 @@ WHERE T1.css('#title') IN ('Title 1', 'Title 2', 'Title 3')
 SELECT * FROM 
 (
 	SELECT css("#title") as title
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 ) AS T1,
 (
 	SELECT  css("#title") as title
-    FROM  http://www.phantomsql.com/test/index-02.html 
+    FROM  http://www.delven.io/test/index-02.html 
 ) AS T2
 
 WHERE T1.title IN ('Title 1', 'Title 2', 'Title 3')

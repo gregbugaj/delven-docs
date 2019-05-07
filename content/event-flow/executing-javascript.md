@@ -21,7 +21,7 @@ Executing script on loaded document
 
 ```sql
 SELECT * 
-FROM http://www.phantomsql.com/test/execute.html
+FROM http://www.delven.io/test/execute.html
 EVENTFLOW
 {
   "execute" : ["window.scrollTo(0, 0)", "document.write('Hello World')"]
@@ -34,7 +34,7 @@ Before a funtion can be executed a DOMElement first need to be located
 
 ```sql
 SELECT css("#btn") 
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 [
   {
@@ -45,7 +45,7 @@ EVENTFLOW
 ```
 
 ## Full JavaScript support : ECMAScript 6 
-PhantomSQL allows for low lever interaction with documents via JavaScript(ECMAScript 6) scripts.
+Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.
 The `native` keyword is applied to a script to indicate that the script is implemented in native code.
 
 ### Context Object
@@ -75,7 +75,7 @@ Calling native functions takes a special `$` prefix such as `$product`
 
 ```sql
 SELECT $product() AS product
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 NATIVE "page-interceptor.js"
 ```
 
@@ -84,7 +84,7 @@ Arguments passed to the function take an JSON object and can be accessed from th
 
 ```sql
 SELECT $product({"field":"product"}) AS product
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 NATIVE "page-interceptor.js"
 ```
 

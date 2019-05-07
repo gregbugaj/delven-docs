@@ -75,7 +75,7 @@ Fill out `input-name` field with value `ABC`
 
 ```sql
 SELECT * 
-FROM http://www.phantomsql.com/test/execute.html
+FROM http://www.delven.io/test/execute.html
 EVENTFLOW
 [
   {
@@ -89,7 +89,7 @@ EVENTFLOW
 
 ```sql
 SELECT * 
-FROM http://www.phantomsql.com/test/execute.html
+FROM http://www.delven.io/test/execute.html
 EVENTFLOW
 [
   {
@@ -106,7 +106,7 @@ EVENTFLOW
 
 ```sql
 SELECT * 
-FROM http://www.phantomsql.com/test/execute.html
+FROM http://www.delven.io/test/execute.html
 EVENTFLOW
 [
   {

@@ -11,7 +11,7 @@ It can be run as a interpreter or 'server' mode, it comes with type 4 JDBC drive
 This documentation is your guide to an advanced new world of real-time data connectivity.
 
 
-* To get an idea of what PhantomSQL is and how it can benefit your organization, visit the Introduction Section page.
+* To get an idea of what Delven is and how it can benefit your organization, visit the Introduction Section page.
 * New users and experienced users alike may refer to the [Syntax](/syntax) section for all the information you need to create robust queries. 
 * For new users, the [Tutorial](/examples ) provides an introduction to basic query writing skills and a page of sample queries to get you started.
-* Programmers interested in embedding PhantomSQL within their application should visit the [API Reference](/api).
+* Programmers interested in embedding Delven within their application should visit the [API Reference](/api).

@@ -12,18 +12,18 @@
     <title>INSERT :: Delven Documentation</title>
 
     
-    <link href="/css/nucleus.css?1557222544" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1557222544" rel="stylesheet">
-    <link href="/css/hybrid.css?1557222544" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1557222544" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1557222544" rel="stylesheet">
-    <link href="/css/auto-complete.css?1557222544" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1557222544" rel="stylesheet">
-    <link href="/css/theme.css?1557222544" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1557222544" rel="stylesheet">
+    <link href="/css/nucleus.css?1557224946" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1557224946" rel="stylesheet">
+    <link href="/css/hybrid.css?1557224946" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1557224946" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1557224946" rel="stylesheet">
+    <link href="/css/auto-complete.css?1557224946" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1557224946" rel="stylesheet">
+    <link href="/css/theme.css?1557224946" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1557224946" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1557222544"></script>
+    <script src="/js/jquery-3.3.1.min.js?1557224946"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1557222544"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1557222544"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1557224946"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1557224946"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1557222544"></script>
+<script type="text/javascript" src="/js/search.js?1557224946"></script>
 
     
   </div>
@@ -321,13 +321,13 @@
  
   
     
-    <li data-nav-id="/meta/" title="About PhantomSQL" class="dd-item 
+    <li data-nav-id="/meta/" title="About Delven" class="dd-item 
         
         
         
         ">
       <a href="/meta/">
-          About PhantomSQL
+          About Delven
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1304,7 +1304,7 @@
 
 
 
-<p>PhantomSQL uses a simple syntax to store results. The INTO clause always comes after the SELECT statement.
+<p>Delven uses a simple syntax to store results. The INTO clause always comes after the SELECT statement.
 Extraction results are stored in collections, collection is a container for a JSON documents.</p>
 
 <h2 id="syntax">Syntax</h2>
@@ -1315,7 +1315,7 @@ Extraction results are stored in collections, collection is a container for a JS
 
 <p>This is minimalistic example of our INSERT clause.</p>
 
-<pre><code class="language-sql">  SELECT css(&quot;#header&quot;), css(&quot;#title&quot;)  FROM  http://www.phantomsql.com/test/index-01.html   
+<pre><code class="language-sql">  SELECT css(&quot;#header&quot;), css(&quot;#title&quot;)  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection   
 </code></pre>
 
@@ -1339,14 +1339,14 @@ So if there were two <code>#header</code> id in the page we will have two docume
 <p>To specify a explicit name we use the <code>AS</code> keyword.</p>
 
 <pre><code class="language-sql">  SELECT css(&quot;#header&quot;) AS Header, css(&quot;#title&quot;) AS Title  
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
 </code></pre>
 
 <p>Here is version that uses explicit column names, this is more verbose but it allows us to controll exactly what will be inserted.</p>
 
 <pre><code class="language-sql">  SELECT css(&quot;#header&quot;) AS Header, css(&quot;#title&quot;) AS Title  
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
   {
     &quot;Header&quot; : Header,
@@ -1371,7 +1371,7 @@ So if there were two <code>#header</code> id in the page we will have two docume
 <p>Sometimes it is preferable to provide default values for data that is not present.</p>
 
 <pre><code class="language-sql">  SELECT css(&quot;#header&quot;) AS Header, css(&quot;#title&quot;) AS Title  
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
   {
     &quot;Header&quot; : {&quot;value&quot; : Header, &quot;default&quot; : &quot;Default Header&quot;},        
@@ -1384,7 +1384,7 @@ So if there were two <code>#header</code> id in the page we will have two docume
 <p>Here we have an example where we select a single  <code>#header</code> and all the links inside that header with <code>#header a</code> selector.</p>
 
 <pre><code class="language-sql">  SELECT css(&quot;#header&quot;) AS header, css(&quot;#header a&quot;) AS links 
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
 </code></pre>
 
@@ -2329,20 +2329,20 @@ INSERT HeaderCollection
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1557222544"></script>
-    <script src="/js/jquery.sticky.js?1557222544"></script>
-    <script src="/js/featherlight.min.js?1557222544"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1557222544"></script>
-    <script src="/js/highlight.pack.js?1557222544"></script>
+    <script src="/js/clipboard.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1557224946"></script>
+    <script src="/js/jquery.sticky.js?1557224946"></script>
+    <script src="/js/featherlight.min.js?1557224946"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1557224946"></script>
+    <script src="/js/highlight.pack.js?1557224946"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1557222544"></script>
-    <script src="/js/learn.js?1557222544"></script>
-    <script src="/js/hugo-learn.js?1557222544"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1557224946"></script>
+    <script src="/js/learn.js?1557224946"></script>
+    <script src="/js/hugo-learn.js?1557224946"></script>
 
-    <link href="/mermaid/mermaid.css?1557222544" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1557222544"></script>
+    <link href="/mermaid/mermaid.css?1557224946" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1557224946"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

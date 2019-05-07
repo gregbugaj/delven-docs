@@ -21,6 +21,6 @@ See [JavaScript Execution](/event-flow/executing-javascript) for details and exa
 ## Usage
 
 ```sql
-  SELECT  css("#id1")  FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  css("#id1")  FROM  http://www.delven.io/test/index-01.html 
   NATIVE "script.js"
 ```

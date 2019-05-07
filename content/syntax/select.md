@@ -46,7 +46,7 @@ Selectors can be chained to provide fine grained selections or to simplify the e
         .css(".sub-selector")
           .css(".another-selector") as ColumnA
 
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 
 
   SELECT 
@@ -54,14 +54,14 @@ Selectors can be chained to provide fine grained selections or to simplify the e
         .xpath(".//a")
           .regex("(.+?))") as ColumnA
 
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 ```
 
 ## Examples
 
 ## CSS Selector
 
-In PhantomSQL, css selectors are patterns used to select the element(s) you want to interact with.
+In Delve, css selectors are patterns used to select the element(s) you want to interact with.
 
 | Selector       	            | Example               | Description                                 | Reference
 | --------------------------- | --------------------- | ------------------------------------------- | ------------------
@@ -78,31 +78,31 @@ In PhantomSQL, css selectors are patterns used to select the element(s) you want
 ### Selector by CSS classname
 
 ```sql
-  SELECT  css(".class-one") FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  css(".class-one") FROM  http://www.delven.io/test/index-01.html 
 ```
 
 ### Selector by CSS id
 ```sql
-  SELECT  css("#id1")  FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  css("#id1")  FROM  http://www.delven.io/test/index-01.html 
 ```
 ### Selector by CSS attribute
 
 ```sql
-  SELECT  css("[readonly=true]") FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  css("[readonly=true]") FROM  http://www.delven.io/test/index-01.html 
 ```
 
 
 ## XPath Selector
 
 ```sql
-  SELECT  xpath("//a") as links  FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  xpath("//a") as links  FROM  http://www.delven.io/test/index-01.html 
 ```
 
 
 ## Regex Selector
 
 ```sql
-  SELECT  reges("(.+?)") as links  FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  reges("(.+?)") as links  FROM  http://www.delven.io/test/index-01.html 
 ```
 
 
@@ -119,7 +119,7 @@ Snapshot accepts two properties.
  
 ```sql 
   SELECT  snapshot({"width":1024, "height":1024, "format":"jpg"}}) as pic
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 ```
 
 
@@ -129,7 +129,7 @@ Return complete response
 
 ```sql 
   SELECT  response()
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 ```
 
 
@@ -143,7 +143,7 @@ Return cookies associated with the request
 
 ```sql 
   SELECT  cookies(["cookieA", "cookieB"])
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 ```
 #### Response data
 ```json
@@ -160,12 +160,13 @@ View the headers returned
 | -------------	| ------------------------------------ | ----------- | ------------ | -----------
 | name	        | optional `[Array of Strings]`        | Name        | All          | Name of the header
 
-
-```sql 
+```sql
   SELECT  headers(["headerA", "Header"])
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 ```
+
 #### Response data
+
 ```json
  {
    "name"  : "The name of the header",
@@ -175,7 +176,7 @@ View the headers returned
 
 ## Selector Extensions  [W3 CSS selectors Rules](https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)
 
-PhantomSQL add number of css selector extensions 
+Delven adds number of css selector extensions 
 
 | Name       	      | Example                | Description
 | -----------------	| ---------------------- |--------------- 

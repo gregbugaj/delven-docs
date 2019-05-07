@@ -17,7 +17,7 @@
       
       <guid>/api-reference/api-endpoints/</guid>
       <description>Endpoint
-https://api.phantomsql.com/v1/script/execute?token=secrettoken&amp;amp;tag=myscript
+https://api.delven.io/v1/script/execute?token=secrettoken&amp;amp;tag=myscript
 The API URLs contain an authentication token and therefore should not be shared.</description>
     </item>
     
@@ -28,7 +28,7 @@ The API URLs contain an authentication token and therefore should not be shared.
       
       <guid>/event-flow/element-attributes/</guid>
       <description> Interacting with Element Attributes
-Parameter Specification    Name Spec Data Types Description     attribute optional Object of Key:Value Set attribute value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;info&amp;quot; value=&amp;quot;&amp;quot; data-a=&amp;quot;Value A&amp;quot; data-b=&amp;quot;Value B&amp;quot;&amp;gt;  Setting Attribute Values SELECT css(&amp;quot;#info[data-a]&amp;quot;) as aval, css(&amp;quot;#info[data-b]&amp;quot;) as bval FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#info&amp;quot;, &amp;quot;attribute&amp;quot;: { &amp;quot;data-a&amp;quot;: &amp;quot;New Value A&amp;quot;, &amp;quot;data-b&amp;quot;: &amp;quot;New Value B&amp;quot; } } ]  Results { &amp;quot;aval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value A&amp;quot; }, &amp;quot;bval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value B&amp;quot; } }  </description>
+Parameter Specification    Name Spec Data Types Description     attribute optional Object of Key:Value Set attribute value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;info&amp;quot; value=&amp;quot;&amp;quot; data-a=&amp;quot;Value A&amp;quot; data-b=&amp;quot;Value B&amp;quot;&amp;gt;  Setting Attribute Values SELECT css(&amp;quot;#info[data-a]&amp;quot;) as aval, css(&amp;quot;#info[data-b]&amp;quot;) as bval FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#info&amp;quot;, &amp;quot;attribute&amp;quot;: { &amp;quot;data-a&amp;quot;: &amp;quot;New Value A&amp;quot;, &amp;quot;data-b&amp;quot;: &amp;quot;New Value B&amp;quot; } } ]  Results { &amp;quot;aval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value A&amp;quot; }, &amp;quot;bval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value B&amp;quot; } }  </description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@ https://msdn.microsoft.com/en-us/library/windows/desktop/aa385638(v=vs.85).aspx
       
       <guid>/event-flow/buttons/</guid>
       <description>Interacting with Buttons
-Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
+Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
     </item>
     
     <item>
@@ -65,7 +65,7 @@ Parameter Specification    Name Spec Data Types Description     value required [
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/crawl/</guid>
-      <description>PhantomSQL can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax:
+      <description>Delven can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax:
 Specification    Name Spec Data Types Default Description     depth optional [Number] 2 How deep will the link be followed   follow optional [String] All links Selector to follow   using optional [Object] N/A USING clause    CRAWL { &amp;quot;depth&amp;quot; : 2, &amp;quot;follow&amp;quot; : css(&amp;quot;#comments a&amp;quot;) }  Basic usage This query retrieves data by crawling three layers deep within a web site:</description>
     </item>
     
@@ -113,7 +113,7 @@ Specification    Name Spec Data Types Default Description     depth optional [Nu
       
       <guid>/syntax/datatypes/</guid>
       <description> Data types used
-URL { http://www.phantomsql.com }  String { &amp;quot;key&amp;quot; : &amp;quot;String Value&amp;quot; }  Numeric { &amp;quot;key&amp;quot; : 12345 }  Boolean { &amp;quot;key&amp;quot; : true | false }  Object of Key:Value { &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, } }  Array of Strings { &amp;quot;headers&amp;quot;: [ &amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot; ] }  </description>
+URL { http://www.delven.io }  String { &amp;quot;key&amp;quot; : &amp;quot;String Value&amp;quot; }  Numeric { &amp;quot;key&amp;quot; : 12345 }  Boolean { &amp;quot;key&amp;quot; : true | false }  Object of Key:Value { &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, } }  Array of Strings { &amp;quot;headers&amp;quot;: [ &amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot; ] }  </description>
     </item>
     
     <item>
@@ -132,8 +132,8 @@ Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/event-flow/element-selection/</guid>
-      <description>How to use Selector in PhantomSQL
-Selectors tell PhantomSQL which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in SELECT clause.
+      <description>How to use Selector in Delven
+Selectors tell Delven which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in SELECT clause.
 Selector types    Name Spec Data Types Description     by-css required [String] Select using CSS   by-name required [String] Select using element name   by-xpath required [String] Select using XPath   by-regex required [String] Select using regular expressions    Requirement [ { &amp;quot;by-XXXXX&amp;quot; : &amp;quot;SELECTOR&amp;quot;, &amp;quot;filter&amp;quot; : &amp;quot;&amp;quot; } ]  Examples For concreate example for specific types visit.</description>
     </item>
     
@@ -191,9 +191,9 @@ Specifies a data source, with or without an alias. If alias is not specified, it
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/insert/</guid>
-      <description>PhantomSQL uses a simple syntax to store results. The INTO clause always comes after the SELECT statement. Extraction results are stored in collections, collection is a container for a JSON documents.
+      <description>Delven uses a simple syntax to store results. The INTO clause always comes after the SELECT statement. Extraction results are stored in collections, collection is a container for a JSON documents.
 Syntax Examples Inserting This is minimalistic example of our INSERT clause.
-SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html INSERT HeaderCollection  This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
+SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM http://www.delven.io/test/index-01.html INSERT HeaderCollection  This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
     </item>
     
     <item>
@@ -202,10 +202,10 @@ SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM ht
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/language-elements/coversions/</guid>
-      <description>PhantomSQL does implicit conversions for complex types.
+      <description>Delven does implicit conversions for complex types.
 What this means is that when we use a selector such as css(&#39;a&#39;) we are actually selecting a HTMLElement not the value associated with the elements, so in order to get the value we follow some rules to do that.
 Implicit conversion is ENABLED by default, to disable it we can use the OPTIONS clause.
-SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  When conversion is ENABLED following two selectors are equivalent.</description>
+SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  When conversion is ENABLED following two selectors are equivalent.</description>
     </item>
     
     <item>
@@ -227,8 +227,8 @@ Types of supported joins.
       
       <guid>/event-flow/executing-javascript/</guid>
       <description>Executing script on loaded document
-Arguments Examples A. Execute JavaScript function SELECT * FROM http://www.phantomsql.com/test/execute.html EVENTFLOW { &amp;quot;execute&amp;quot; : [&amp;quot;window.scrollTo(0, 0)&amp;quot;, &amp;quot;document.write(&#39;Hello World&#39;)&amp;quot;] }  A. Execute JavaScript on DOMElement Before a funtion can be executed a DOMElement first need to be located
-SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot; : &amp;quot;#btn&amp;quot;, &amp;quot;execute&amp;quot; : [&amp;quot;$.click()&amp;quot;] } ]  Full JavaScript support : ECMAScript 6 PhantomSQL allows for low lever interaction with documents via JavaScript(ECMAScript 6) scripts.</description>
+Arguments Examples A. Execute JavaScript function SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW { &amp;quot;execute&amp;quot; : [&amp;quot;window.scrollTo(0, 0)&amp;quot;, &amp;quot;document.write(&#39;Hello World&#39;)&amp;quot;] }  A. Execute JavaScript on DOMElement Before a funtion can be executed a DOMElement first need to be located
+SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot; : &amp;quot;#btn&amp;quot;, &amp;quot;execute&amp;quot; : [&amp;quot;$.click()&amp;quot;] } ]  Full JavaScript support : ECMAScript 6 Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.</description>
     </item>
     
     <item>
@@ -287,7 +287,7 @@ Navigation Keys  KEY_LEFT (Navigation Left) KEY_UP (Navigation Up) KEY_RIGHT (Na
       <guid>/syntax/native/</guid>
       <description> NATIVE clause allows us to execute Javascript directly on the loaded document
 See JavaScript Execution for details and examples
-Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html NATIVE &amp;quot;script.js&amp;quot;  </description>
+Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html NATIVE &amp;quot;script.js&amp;quot;  </description>
     </item>
     
     <item>
@@ -297,7 +297,7 @@ Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp
       
       <guid>/syntax/options/</guid>
       <description> Certain options are Enabled/Disabled by default and they can be controlled with OPTIONS clause.
-Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &amp;quot;OptionName2&amp;quot; : &amp;quot;Value&amp;quot; }  Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  </description>
+Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &amp;quot;OptionName2&amp;quot; : &amp;quot;Value&amp;quot; }  Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  </description>
     </item>
     
     <item>
@@ -315,7 +315,7 @@ Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/language-elements/pseudocolumns/</guid>
-      <description> In addition to columns provided by input objects, PhantomSQL provides pseudocolumns, which expressions can also reference. Some pseudocolumns are only available to expressions in certain contexts. Others are generally available to any expression.
+      <description> In addition to columns provided by input objects, Delven provides pseudocolumns, which expressions can also reference. Some pseudocolumns are only available to expressions in certain contexts. Others are generally available to any expression.
 Specification    Name Description     PS.FETCH_ID The sequential ID of the current fetch. This ID is global across the entire query.   PS.REQUEST_URL The URL initially visited to load the document, prior to any redirection    </description>
     </item>
     
@@ -425,7 +425,7 @@ Table designators: A qualifier that designates a specific object table is called
       
       <guid>/event-flow/textbox/</guid>
       <description>Interacting with Texboxes
-Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.phantomsql.com/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
+Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
     </item>
     
     <item>
@@ -455,7 +455,7 @@ Specification    Name Spec Data Types Value Default Description     method optio
       
       <guid>/syntax/where/</guid>
       <description>Specifies the search condition for the rows returned by the query.
- Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;)  SELECT css(&#39;#title&#39;) as title FROM http://www.phantomsql.com/test/index-01.html WITHIN css(&amp;quot;.content-container&amp;quot;) WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;h1&amp;quot;) as header FROM http://www.</description>
+ Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;)  SELECT css(&#39;#title&#39;) as title FROM http://www.delven.io/test/index-01.html WITHIN css(&amp;quot;.content-container&amp;quot;) WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;h1&amp;quot;) as header FROM http://www.</description>
     </item>
     
     <item>
@@ -476,7 +476,7 @@ Arguments expression_name Is a valid identifier for the common table expression.
       
       <guid>/syntax/within/</guid>
       <description> WITHIN clause is used to narrow results down
-Basic usage SELECT css(&#39;#title&#39;) as title WITHIN css(&amp;quot;.content-container&amp;quot;) FROM http://www.phantomsql.com/test/index-01.html  Multiple filters SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.phantomsql.com/test/index-01.html  SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.phantomsql.com/test/index-01.html WHERE css(&amp;quot;.content-container-a .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;) OR css(&amp;quot;.content-container-b .title&amp;quot;) LIKE (&#39;Test 3&#39;, &#39;Test 4&#39;)  </description>
+Basic usage SELECT css(&#39;#title&#39;) as title WITHIN css(&amp;quot;.content-container&amp;quot;) FROM http://www.delven.io/test/index-01.html  Multiple filters SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.delven.io/test/index-01.html  SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container-a .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;) OR css(&amp;quot;.content-container-b .title&amp;quot;) LIKE (&#39;Test 3&#39;, &#39;Test 4&#39;)  </description>
     </item>
     
   </channel>

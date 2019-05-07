@@ -9,21 +9,21 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>About PhantomSQL :: Delven Documentation</title>
+    <title>About Delven :: Delven Documentation</title>
 
     
-    <link href="/css/nucleus.css?1557222544" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1557222544" rel="stylesheet">
-    <link href="/css/hybrid.css?1557222544" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1557222544" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1557222544" rel="stylesheet">
-    <link href="/css/auto-complete.css?1557222544" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1557222544" rel="stylesheet">
-    <link href="/css/theme.css?1557222544" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1557222544" rel="stylesheet">
+    <link href="/css/nucleus.css?1557224946" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1557224946" rel="stylesheet">
+    <link href="/css/hybrid.css?1557224946" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1557224946" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1557224946" rel="stylesheet">
+    <link href="/css/auto-complete.css?1557224946" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1557224946" rel="stylesheet">
+    <link href="/css/theme.css?1557224946" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1557224946" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1557222544"></script>
+    <script src="/js/jquery-3.3.1.min.js?1557224946"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1557222544"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1557222544"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1557224946"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1557224946"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1557222544"></script>
+<script type="text/javascript" src="/js/search.js?1557224946"></script>
 
     
   </div>
@@ -321,13 +321,13 @@
  
   
     
-    <li data-nav-id="/meta/" title="About PhantomSQL" class="dd-item 
+    <li data-nav-id="/meta/" title="About Delven" class="dd-item 
         parent
         active
         
         ">
       <a href="/meta/">
-          About PhantomSQL
+          About Delven
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1246,7 +1246,7 @@
             
           
           
-            <a href='/'>Welcome to Delven</a> > About PhantomSQL
+            <a href='/'>Welcome to Delven</a> > About Delven
           
          
           
@@ -1259,11 +1259,10 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#upcoming-release-march-30-2017">Upcoming Release March 30 2017</a>
+<li>
 <ul>
-<li><a href="#why-the-rewrite">Why the rewrite</a></li>
-</ul></li>
 <li><a href="#technology-under-the-hood">Technology under the hood</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -1281,7 +1280,7 @@
           
             <h1>
               
-              About PhantomSQL
+              About Delven
             </h1>
           
 
@@ -1294,35 +1293,40 @@
 
 <p>First of all thanks to all that supported this project.</p>
 
-<h1 id="upcoming-release-march-30-2017">Upcoming Release March 30 2017</h1>
-
-<p>This is a complete rewrite of PhantomSQL v1. Main issues that will be addressed</p>
-
-<ul>
-<li><p>Reworking language syntax</p>
+<p>This is a complete rewrite of original PhantomSQL data extract engine that was written in Java.
+Main issues that will be addressing with this rewrite are as follows</p>
 
 <ul>
-<li>Based on modern languages / frameworks (EcmaScript / Python / Rubby / SQL/ Node.js)</li>
-<li>Web 2.0 (Support for extracting data from dynamic websites)</li>
+<li>Reworking language syntax
+
+<ul>
+<li>Based on modern languages / frameworks (EcmaScript / TypeScript / Python / Rubby / SQL/ Node.js)</li>
+<li>Web 2.0 and beyound (Support for extracting data from dynamic websites as well as realtime data extraction)</li>
 </ul></li>
+<li>Exposing low level API as first class citizens
 
-<li><p>Query plan</p></li>
+<ul>
+<li>Javascript</li>
+<li>TypeScript</li>
+<li>C++ navive extensions<br /></li>
+</ul></li>
+<li>Query plan</li>
+<li>Package Manager
 
-<li><p>Distributed Processing(Will run on a distributed clustering framework)</p></li>
-
-<li><p>Package Manager (PhantomSQL Package Manager(PPM))</p></li>
+<ul>
+<li>Delven Package Manager(DPM)</li>
+<li>Node Package Manager(NPM)</li>
+</ul></li>
+<li>Distributed Processing</li>
+<li>Machine learning</li>
 </ul>
 
-<h2 id="why-the-rewrite">Why the rewrite</h2>
-
-<h1 id="technology-under-the-hood">Technology under the hood</h1>
+<h2 id="technology-under-the-hood">Technology under the hood</h2>
 
 <ul>
-<li>Zookeeper</li>
-<li>Chromium</li>
-<li>Antler</li>
-<li>AWS</li>
-<li>Docker</li>
+<li>Chromium/CEF <a href="https://github.com/chromiumembedded/cef">https://github.com/chromiumembedded/cef</a></li>
+<li>Zookeeper <a href="https://zookeeper.apache.org/">https://zookeeper.apache.org/</a></li>
+<li>Antlr  <a href="https://github.com/antlr">https://github.com/antlr</a></li>
 </ul>
 
 
@@ -2220,20 +2224,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1557222544"></script>
-    <script src="/js/jquery.sticky.js?1557222544"></script>
-    <script src="/js/featherlight.min.js?1557222544"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1557222544"></script>
-    <script src="/js/highlight.pack.js?1557222544"></script>
+    <script src="/js/clipboard.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1557224946"></script>
+    <script src="/js/jquery.sticky.js?1557224946"></script>
+    <script src="/js/featherlight.min.js?1557224946"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1557224946"></script>
+    <script src="/js/highlight.pack.js?1557224946"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1557222544"></script>
-    <script src="/js/learn.js?1557222544"></script>
-    <script src="/js/hugo-learn.js?1557222544"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1557224946"></script>
+    <script src="/js/learn.js?1557224946"></script>
+    <script src="/js/hugo-learn.js?1557224946"></script>
 
-    <link href="/mermaid/mermaid.css?1557222544" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1557222544"></script>
+    <link href="/mermaid/mermaid.css?1557224946" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1557224946"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

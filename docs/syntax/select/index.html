@@ -12,18 +12,18 @@
     <title>SELECT :: Delven Documentation</title>
 
     
-    <link href="/css/nucleus.css?1557222544" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1557222544" rel="stylesheet">
-    <link href="/css/hybrid.css?1557222544" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1557222544" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1557222544" rel="stylesheet">
-    <link href="/css/auto-complete.css?1557222544" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1557222544" rel="stylesheet">
-    <link href="/css/theme.css?1557222544" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1557222544" rel="stylesheet">
+    <link href="/css/nucleus.css?1557224946" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1557224946" rel="stylesheet">
+    <link href="/css/hybrid.css?1557224946" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1557224946" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1557224946" rel="stylesheet">
+    <link href="/css/auto-complete.css?1557224946" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1557224946" rel="stylesheet">
+    <link href="/css/theme.css?1557224946" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1557224946" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1557222544"></script>
+    <script src="/js/jquery-3.3.1.min.js?1557224946"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1557222544"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1557222544"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1557224946"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1557224946"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1557222544"></script>
+<script type="text/javascript" src="/js/search.js?1557224946"></script>
 
     
   </div>
@@ -321,13 +321,13 @@
  
   
     
-    <li data-nav-id="/meta/" title="About PhantomSQL" class="dd-item 
+    <li data-nav-id="/meta/" title="About Delven" class="dd-item 
         
         
         
         ">
       <a href="/meta/">
-          About PhantomSQL
+          About Delven
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1412,7 +1412,7 @@ Implicit parameters are a shorthand that allows us to pass parameter without exp
         .css(&quot;.sub-selector&quot;)
           .css(&quot;.another-selector&quot;) as ColumnA
 
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 
 
   SELECT 
@@ -1420,14 +1420,14 @@ Implicit parameters are a shorthand that allows us to pass parameter without exp
         .xpath(&quot;.//a&quot;)
           .regex(&quot;(.+?))&quot;) as ColumnA
 
-    FROM  http://www.phantomsql.com/test/index-01.html 
+    FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h2 id="examples">Examples</h2>
 
 <h2 id="css-selector">CSS Selector</h2>
 
-<p>In PhantomSQL, css selectors are patterns used to select the element(s) you want to interact with.</p>
+<p>In Delve, css selectors are patterns used to select the element(s) you want to interact with.</p>
 
 <table>
 <thead>
@@ -1469,27 +1469,27 @@ Implicit parameters are a shorthand that allows us to pass parameter without exp
 
 <h3 id="selector-by-css-classname">Selector by CSS classname</h3>
 
-<pre><code class="language-sql">  SELECT  css(&quot;.class-one&quot;) FROM  http://www.phantomsql.com/test/index-01.html 
+<pre><code class="language-sql">  SELECT  css(&quot;.class-one&quot;) FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h3 id="selector-by-css-id">Selector by CSS id</h3>
 
-<pre><code class="language-sql">  SELECT  css(&quot;#id1&quot;)  FROM  http://www.phantomsql.com/test/index-01.html 
+<pre><code class="language-sql">  SELECT  css(&quot;#id1&quot;)  FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h3 id="selector-by-css-attribute">Selector by CSS attribute</h3>
 
-<pre><code class="language-sql">  SELECT  css(&quot;[readonly=true]&quot;) FROM  http://www.phantomsql.com/test/index-01.html 
+<pre><code class="language-sql">  SELECT  css(&quot;[readonly=true]&quot;) FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h2 id="xpath-selector">XPath Selector</h2>
 
-<pre><code class="language-sql">  SELECT  xpath(&quot;//a&quot;) as links  FROM  http://www.phantomsql.com/test/index-01.html 
+<pre><code class="language-sql">  SELECT  xpath(&quot;//a&quot;) as links  FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h2 id="regex-selector">Regex Selector</h2>
 
-<pre><code class="language-sql">  SELECT  reges(&quot;(.+?)&quot;) as links  FROM  http://www.phantomsql.com/test/index-01.html 
+<pre><code class="language-sql">  SELECT  reges(&quot;(.+?)&quot;) as links  FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h2 id="snapshot-selector">Snapshot Selector</h2>
@@ -1536,7 +1536,7 @@ Snapshot accepts two properties.</p>
 </table>
 
 <pre><code class="language-sql">  SELECT  snapshot({&quot;width&quot;:1024, &quot;height&quot;:1024, &quot;format&quot;:&quot;jpg&quot;}}) as pic
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h2 id="response-selector">Response Selector</h2>
@@ -1544,7 +1544,7 @@ Snapshot accepts two properties.</p>
 <p>Return complete response</p>
 
 <pre><code class="language-sql">  SELECT  response()
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h2 id="cookies-selector">Cookies Selector</h2>
@@ -1574,7 +1574,7 @@ Snapshot accepts two properties.</p>
 </table>
 
 <pre><code class="language-sql">  SELECT  cookies([&quot;cookieA&quot;, &quot;cookieB&quot;])
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h4 id="response-data">Response data</h4>
@@ -1612,7 +1612,7 @@ Snapshot accepts two properties.</p>
 </table>
 
 <pre><code class="language-sql">  SELECT  headers([&quot;headerA&quot;, &quot;Header&quot;])
-     FROM  http://www.phantomsql.com/test/index-01.html 
+     FROM  http://www.delven.io/test/index-01.html 
 </code></pre>
 
 <h4 id="response-data-1">Response data</h4>
@@ -1625,7 +1625,7 @@ Snapshot accepts two properties.</p>
 
 <h2 id="selector-extensions-w3-css-selectors-rules-https-www-w3-org-tr-css21-syndata-html-value-def-identifier">Selector Extensions  <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">W3 CSS selectors Rules</a></h2>
 
-<p>PhantomSQL add number of css selector extensions</p>
+<p>Delven adds number of css selector extensions</p>
 
 <table>
 <thead>
@@ -2557,20 +2557,20 @@ Snapshot accepts two properties.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1557222544"></script>
-    <script src="/js/jquery.sticky.js?1557222544"></script>
-    <script src="/js/featherlight.min.js?1557222544"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1557222544"></script>
-    <script src="/js/highlight.pack.js?1557222544"></script>
+    <script src="/js/clipboard.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1557224946"></script>
+    <script src="/js/jquery.sticky.js?1557224946"></script>
+    <script src="/js/featherlight.min.js?1557224946"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1557224946"></script>
+    <script src="/js/highlight.pack.js?1557224946"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1557222544"></script>
-    <script src="/js/learn.js?1557222544"></script>
-    <script src="/js/hugo-learn.js?1557222544"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1557224946"></script>
+    <script src="/js/learn.js?1557224946"></script>
+    <script src="/js/hugo-learn.js?1557224946"></script>
 
-    <link href="/mermaid/mermaid.css?1557222544" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1557222544"></script>
+    <link href="/mermaid/mermaid.css?1557224946" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1557224946"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

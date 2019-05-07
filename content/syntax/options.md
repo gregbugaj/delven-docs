@@ -29,7 +29,7 @@ Certain options are Enabled/Disabled by default and they can be controlled with 
 ## Usage
 
 ```sql
-  SELECT  css("#id1")  FROM  http://www.phantomsql.com/test/index-01.html 
+  SELECT  css("#id1")  FROM  http://www.delven.io/test/index-01.html 
   OPTIONS
   {
       "implicit-conversion" : false

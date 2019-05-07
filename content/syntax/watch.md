@@ -26,7 +26,7 @@ The following example setups a `WATCH` to be executed every 30 seconds.
 ```sql
 SELECT  css('#title') as title 
 WITHIN css(".content-container")
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 
 WATCH
 {
@@ -42,7 +42,7 @@ The following example setups a `WATCH` to be executed  at 10:30 P.M. (22:30).
 ```sql
 SELECT  css('#title') as title 
 WITHIN css(".content-container")
-FROM  http://www.phantomsql.com/test/index-01.html 
+FROM  http://www.delven.io/test/index-01.html 
 
 WATCH
 {

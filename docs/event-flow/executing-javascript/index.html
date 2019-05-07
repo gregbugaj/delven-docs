@@ -12,18 +12,18 @@
     <title>JavaScript Execution :: Delven Documentation</title>
 
     
-    <link href="/css/nucleus.css?1557222544" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1557222544" rel="stylesheet">
-    <link href="/css/hybrid.css?1557222544" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1557222544" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1557222544" rel="stylesheet">
-    <link href="/css/auto-complete.css?1557222544" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1557222544" rel="stylesheet">
-    <link href="/css/theme.css?1557222544" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1557222544" rel="stylesheet">
+    <link href="/css/nucleus.css?1557224946" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1557224946" rel="stylesheet">
+    <link href="/css/hybrid.css?1557224946" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1557224946" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1557224946" rel="stylesheet">
+    <link href="/css/auto-complete.css?1557224946" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1557224946" rel="stylesheet">
+    <link href="/css/theme.css?1557224946" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1557224946" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1557222544"></script>
+    <script src="/js/jquery-3.3.1.min.js?1557224946"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1557222544"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1557222544"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1557224946"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1557224946"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1557222544"></script>
+<script type="text/javascript" src="/js/search.js?1557224946"></script>
 
     
   </div>
@@ -321,13 +321,13 @@
  
   
     
-    <li data-nav-id="/meta/" title="About PhantomSQL" class="dd-item 
+    <li data-nav-id="/meta/" title="About Delven" class="dd-item 
         
         
         
         ">
       <a href="/meta/">
-          About PhantomSQL
+          About Delven
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1332,7 +1332,7 @@
 <h3 id="a-execute-javascript-function">A. Execute JavaScript function</h3>
 
 <pre><code class="language-sql">SELECT * 
-FROM http://www.phantomsql.com/test/execute.html
+FROM http://www.delven.io/test/execute.html
 EVENTFLOW
 {
   &quot;execute&quot; : [&quot;window.scrollTo(0, 0)&quot;, &quot;document.write('Hello World')&quot;]
@@ -1344,7 +1344,7 @@ EVENTFLOW
 <p>Before a funtion can be executed a DOMElement first need to be located</p>
 
 <pre><code class="language-sql">SELECT css(&quot;#btn&quot;) 
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 EVENTFLOW
 [
   {
@@ -1356,7 +1356,7 @@ EVENTFLOW
 
 <h2 id="full-javascript-support-ecmascript-6">Full JavaScript support : ECMAScript 6</h2>
 
-<p>PhantomSQL allows for low lever interaction with documents via JavaScript(ECMAScript 6) scripts.
+<p>Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.
 The <code>native</code> keyword is applied to a script to indicate that the script is implemented in native code.</p>
 
 <h3 id="context-object">Context Object</h3>
@@ -1415,7 +1415,7 @@ The <code>native</code> keyword is applied to a script to indicate that the scri
 Calling native functions takes a special <code>$</code> prefix such as <code>$product</code></p>
 
 <pre><code class="language-sql">SELECT $product() AS product
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 NATIVE &quot;page-interceptor.js&quot;
 </code></pre>
 
@@ -1424,7 +1424,7 @@ NATIVE &quot;page-interceptor.js&quot;
 <p>Arguments passed to the function take an JSON object and can be accessed from the <code>context</code> object via <code>context.args</code>.</p>
 
 <pre><code class="language-sql">SELECT $product({&quot;field&quot;:&quot;product&quot;}) AS product
-FROM http://www.phantomsql.com/test/execute.html 
+FROM http://www.delven.io/test/execute.html 
 NATIVE &quot;page-interceptor.js&quot;
 </code></pre>
 
@@ -2378,20 +2378,20 @@ NATIVE &quot;page-interceptor.js&quot;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.min.js?1557222544"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1557222544"></script>
-    <script src="/js/jquery.sticky.js?1557222544"></script>
-    <script src="/js/featherlight.min.js?1557222544"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1557222544"></script>
-    <script src="/js/highlight.pack.js?1557222544"></script>
+    <script src="/js/clipboard.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.min.js?1557224946"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1557224946"></script>
+    <script src="/js/jquery.sticky.js?1557224946"></script>
+    <script src="/js/featherlight.min.js?1557224946"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1557224946"></script>
+    <script src="/js/highlight.pack.js?1557224946"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1557222544"></script>
-    <script src="/js/learn.js?1557222544"></script>
-    <script src="/js/hugo-learn.js?1557222544"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1557224946"></script>
+    <script src="/js/learn.js?1557224946"></script>
+    <script src="/js/hugo-learn.js?1557224946"></script>
 
-    <link href="/mermaid/mermaid.css?1557222544" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1557222544"></script>
+    <link href="/mermaid/mermaid.css?1557224946" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1557224946"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

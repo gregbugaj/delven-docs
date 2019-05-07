@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/event-flow/element-selection/</guid>
-      <description>How to use Selector in PhantomSQL
-Selectors tell PhantomSQL which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in SELECT clause.
+      <description>How to use Selector in Delven
+Selectors tell Delven which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in SELECT clause.
 Selector types    Name Spec Data Types Description     by-css required [String] Select using CSS   by-name required [String] Select using element name   by-xpath required [String] Select using XPath   by-regex required [String] Select using regular expressions    Requirement [ { &amp;quot;by-XXXXX&amp;quot; : &amp;quot;SELECTOR&amp;quot;, &amp;quot;filter&amp;quot; : &amp;quot;&amp;quot; } ]  Examples For concreate example for specific types visit.</description>
     </item>
     

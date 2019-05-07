@@ -42,7 +42,7 @@ This example used a named form and a POST method.
 
 ```sql
   SELECT  css('#title') as title
-  FROM  http://www.phantomsql.com/test/index-01.html
+  FROM  http://www.delven.io/test/index-01.html
   USING
   {
         "method" : "POST",
@@ -59,7 +59,7 @@ This example used a named form and a POST method.
 
 ```sql
   SELECT  css('#title') as title
-  FROM   http://www.phantomsql.com/test/index-01.html
+  FROM   http://www.delven.io/test/index-01.html
   USING
   {        
  	   "headers": ["Accept: application/xml", "Content-Type: application/xml"]     
@@ -71,7 +71,7 @@ This example adds multiple cookies to the request
 
 ```sql
   SELECT  css('#title') as title
-  FROM   http://www.phantomsql.com/test/index-01.html
+  FROM   http://www.delven.io/test/index-01.html
   USING
   {        
  	 "cookies": ["token=1212", "another=value"]     
@@ -83,7 +83,7 @@ This example adds multiple cookies to the request
 
 ```sql
   SELECT  headers()
-  FROM   http://www.phantomsql.com/test/index-01.html
+  FROM   http://www.delven.io/test/index-01.html
   USING
   {
         "method" : "HEAD",    

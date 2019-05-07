@@ -8,7 +8,7 @@ menu:
     parent: syntax
 ---
 
-PhantomSQL uses a simple syntax to store results. The INTO clause always comes after the SELECT statement.
+Delven uses a simple syntax to store results. The INTO clause always comes after the SELECT statement.
 Extraction results are stored in collections, collection is a container for a JSON documents.
 
 ## Syntax
@@ -21,7 +21,7 @@ Extraction results are stored in collections, collection is a container for a JS
 This is minimalistic example of our INSERT clause.
 
 ```sql
-  SELECT css("#header"), css("#title")  FROM  http://www.phantomsql.com/test/index-01.html   
+  SELECT css("#header"), css("#title")  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection   
 ```
 
@@ -48,14 +48,14 @@ To specify a explicit name we use the `AS` keyword.
 
 ```sql
   SELECT css("#header") AS Header, css("#title") AS Title  
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
 ```
 Here is version that uses explicit column names, this is more verbose but it allows us to controll exactly what will be inserted.
 
 ```sql
   SELECT css("#header") AS Header, css("#title") AS Title  
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
   {
     "Header" : Header,
@@ -82,7 +82,7 @@ Sometimes it is preferable to provide default values for data that is not presen
 
 ```sql
   SELECT css("#header") AS Header, css("#title") AS Title  
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
   {
     "Header" : {"value" : Header, "default" : "Default Header"},        
@@ -96,7 +96,7 @@ Here we have an example where we select a single  `#header` and all the links in
 
 ```sql
   SELECT css("#header") AS header, css("#header a") AS links 
-  FROM  http://www.phantomsql.com/test/index-01.html   
+  FROM  http://www.delven.io/test/index-01.html   
   INSERT HeaderCollection 
 ```
 This produces 

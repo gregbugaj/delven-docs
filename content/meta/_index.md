@@ -1,33 +1,30 @@
 ---
-title: About PhantomSQL
+title: About Delven
 weight: 0
 type: index
 ---
 
-
 First of all thanks to all that supported this project.
 
-# Upcoming Release March 30 2017 
-
-This is a complete rewrite of PhantomSQL v1. Main issues that will be addressed
+This is a complete rewrite of original PhantomSQL data extract engine that was written in Java.
+Main issues that will be addressing with this rewrite are as follows
 
 * Reworking language syntax
-    * Based on modern languages / frameworks (EcmaScript / Python / Rubby / SQL/ Node.js)
-    * Web 2.0 (Support for extracting data from dynamic websites)
-
-
+  * Based on modern languages / frameworks (EcmaScript / TypeScript / Python / Rubby / SQL/ Node.js)
+  * Web 2.0 and beyound (Support for extracting data from dynamic websites as well as realtime data extraction)
+* Exposing low level API as first class citizens
+  * Javascript
+  * TypeScript
+  * C++ navive extensions  
 * Query plan
-* Distributed Processing(Will run on a distributed clustering framework)
-* Package Manager (PhantomSQL Package Manager(PPM))
+* Package Manager
+  * Delven Package Manager(DPM)
+  * Node Package Manager(NPM)
+* Distributed Processing
+* Machine learning
 
-## Why the rewrite
+## Technology under the hood
 
-
-# Technology under the hood
-
-* Zookeeper
-* Chromium
-* Antler
-* AWS
-* Docker
-
+* Chromium/CEF <https://github.com/chromiumembedded/cef>
+* Zookeeper <https://zookeeper.apache.org/>
+* Antlr  <https://github.com/antlr>
