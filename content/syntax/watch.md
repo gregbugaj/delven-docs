@@ -10,14 +10,12 @@ menu:
 
 WATCH clause allows us to monitor changes to the underlying content.
 
-
 | Name        	                                    | Spec [Data Types](/syntax/datatypes) | Default       | Description
-| -------------	                                    | ------------------------------------ | ------------  | -----------
+| -------------                                     | ------------------------------------ | ------------  | -----------
 | selector  	                                    | required `Object|Function`           |               | Selector to use for watches
 | [interval]({{< relref  "#watch-interval" >}})     | optional `[String]`                  | 12:00:00      | Interval of how ofter to check for updates
 | [time]({{< relref  "#watch-interval" >}})         | optional `[String]`                  | 12:00:00      | Time of day of when to check for update
 | [method]({{< relref  "#watch-method" >}})         | optional `[String]`                  | value         | Watch Type
-
 
 ## Usage
 The following example setups a `WATCH` to be executed every 30 seconds.

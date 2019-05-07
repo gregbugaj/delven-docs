@@ -12,14 +12,12 @@ tags : [ "css", "event-handling", "eventflow"]
 
 Event Handling
 
-
 ## Mouse Events
 
 | Event Name       	                                     | Fired When
 | -------------	                                         | ------------------------------------
-| [click]({{< relref  "#" >}})                           | 	A pointing device button has been pressed and released on an element.                
+| [click]({{< relref  "#" >}})                           | 	A pointing device button has been pressed and released on an element.
 | [mouseover]({{< relref  "#" >}})                       | 	A pointing device is moved onto the element that has the listener attached or onto one of its children.
-              
 
 Events use a special syntax `"event[ID]"  : "EVENTNAME"` this allows us to specify multiple events in more compact way when multiple events are required on an object to be invoked.
 
