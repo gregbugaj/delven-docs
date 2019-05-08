@@ -36,7 +36,10 @@ The API URLs contain an authentication token and therefore should not be shared.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/api-reference/cookies/</guid>
-      <description>Cookies API</description>
+      <description>Cookies API mozilla
+The cookie module provides utilities for working with cookies.
+To use this module:
+const cookies = require(&#39;cookies&#39;);  cookie.getAll(details)  details &amp;lt;object&amp;gt; An object containing details that can be used to match cookies to be retrieved  name &amp;lt;string&amp;gt; A string representing a name that the cookies should have. path &amp;lt;string&amp;gt; A string representing a path — the cookies&amp;rsquo; path must be identical to this one.  Returns: &amp;lt;object&amp;gt; array of cookie objects  Retrieves all cookies from a cookie store that match the given information.</description>
     </item>
     
     <item>
@@ -46,6 +49,21 @@ The API URLs contain an authentication token and therefore should not be shared.
       
       <guid>/api-reference/events/</guid>
       <description>Events API</description>
+    </item>
+    
+    <item>
+      <title>File System</title>
+      <link>/api-reference/file-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/api-reference/file-system/</guid>
+      <description>The fs module provides an API for interacting with the file system in a manner closely modeled around standard POSIX functions.
+Goal of this inerface is to be compatible with Node.js File System API
+Compatibility objective : 80%
+To use this module:
+const fs = require(&#39;fs&#39;);  All file system operations have synchronous and asynchronous forms.
+fs.readFile(path) Compatibility : broken
+Open, read and return text content of a file. It will throw an exception if it fails.</description>
     </item>
     
     <item>
@@ -73,6 +91,20 @@ The API URLs contain an authentication token and therefore should not be shared.
       
       <guid>/api-reference/mouse/</guid>
       <description>Mouse Events API</description>
+    </item>
+    
+    <item>
+      <title>Path</title>
+      <link>/api-reference/path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/api-reference/path/</guid>
+      <description>The path module provides utilities for working with file and directory paths.
+Goal of this inerface is to be compatible with Node.js Path API
+Compatibility objective : 100%
+To use this module:
+const path = require(&#39;path&#39;);  path.extension(path)  path &amp;lt;string&amp;gt; Path of the file to check Returns: &amp;lt;string&amp;gt; extension  Get the the extension of the path, from the last occurrence of the .
+path.extname(path) Alias for path.extension(path)</description>
     </item>
     
     <item>

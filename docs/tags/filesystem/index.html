@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Request Pipeline :: Delven Documentation</title>
+    <title>Filesystem :: Delven Documentation</title>
 
     
     <link href="/css/nucleus.css?1557318468" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
      
   </head>
-  <body class="" data-url="/api-reference/request/pipeline/">
+  <body class="" data-url="/tags/filesystem/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -98,7 +98,7 @@
   
     
     <li data-nav-id="/api-reference/" title="API Reference" class="dd-item 
-        parent
+        
         
         
         ">
@@ -317,7 +317,7 @@
   
     
     <li data-nav-id="/api-reference/request/" title="Request API" class="dd-item 
-        parent
+        
         
         
         ">
@@ -381,7 +381,7 @@
  
   
     
-      <li data-nav-id="/api-reference/request/pipeline/" title="Request Pipeline" class="dd-item active">
+      <li data-nav-id="/api-reference/request/pipeline/" title="Request Pipeline" class="dd-item ">
         <a href="/api-reference/request/pipeline/">
         Request Pipeline
         <i class="fas fa-check read-icon"></i>
@@ -1329,17 +1329,6 @@
               <div>
                 <div id="top-bar">
                 
-                  
-                  
-                  
-                  <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/gregbugaj/delven-docs/tree/master/content/api-reference/request/pipeline.md" target="blank">
-                      <i class="fas fa-code-branch"></i>
-                      <span id="top-github-link-text">Edit this page</span>
-                    </a>
-                  </div>
-                  
-                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -1356,25 +1345,7 @@
                     
           
           
-            
-            
-          
-          
-            
-            
-          
-          
-            
-            
-          
-          
-            <a href='/'>Welcome to Delven</a> > <a href='/api-reference/'>API Reference</a> > <a href='/api-reference/request/'>Request API</a> > Request Pipeline
-          
-         
-          
-         
-          
-         
+            Filesystem
           
         
                  
@@ -1383,14 +1354,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#request-pipeline">Request Pipeline</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1400,23 +1364,15 @@
             
         <div id="head-tags">
         
-<div class="tags">
-
-  <a class="tag-link" href="/tags/request">request</a>
-
-  <a class="tag-link" href="/tags/api">api</a>
-
-  <a class="tag-link" href="/tags/javascript">javascript</a>
-
-</div>
-
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-              Request Pipeline
+                taxonomy ::
+              
+              Filesystem
             </h1>
           
 
@@ -1428,83 +1384,17 @@
 
 
 
- 
- 
- 
- 
- 
- 
- <div class="table-of-contents toc ">
-     
-     <h4 class="text-muted">Table of Contents</h4>
-     
-         
-         
-             
-                 
-                 
-                 
-                     <ul class="toc-h1">
-                 
-                     <ul class="toc-h2">
-                 
-                 
-                 
-                 
 
-                 <a href="/api-reference/request/pipeline/#request-pipeline">
-                     <li>Request Pipeline</li>
-                 </a>
-                 
-                 
-                     </ul>
-                 
-                     </ul>
-                 
-             
-         
-     
- </div>
- 
-
-
-
-<h2 id="request-pipeline">Request Pipeline</h2>
-
-<p>Pipelines allow for chaing requests</p>
-
-<pre><code>const request = require('request').create();
-
-const onRequestSent = function(request) {
-    console.info(&quot;Sending request : %s&quot;, request);
-}
-
-const onRequestReceived = function (request, response) {
-    console.info(&quot;Receiving request &quot;);
-}
-
-request.on('resource.requested', onRequestSent);
-request.on('resource.received',  onRequestReceived);
-
-request.start().next(() =&gt; {
-    console.info(&quot;Start **&quot;);
-
-    this.open('https://www.google.com/').next(() =&gt; {
-        // Evaluate function in the context of the loaded page
-        this.evaluate(function () {
-            console.info(&quot;Document Title&quot;);
-        });
-    });
-});
-
-request.run();
-</code></pre>
+<ul>
+	
+		<li><a href="/api-reference/file-system/">File System</a></li>
+	
+</ul>
 
 
 <footer class=" footline" >
 	
 </footer>
-
 
         
         </div> 
@@ -1537,6 +1427,8 @@ request.run();
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1552,9 +1444,6 @@ request.run();
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1716,7 +1605,6 @@ request.run();
             
                 
                     
-                    
                 
                 
 
@@ -1730,8 +1618,21 @@ request.run();
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -1760,23 +1661,6 @@ request.run();
             
         
                     
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1784,9 +1668,6 @@ request.run();
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2467,10 +2348,8 @@ request.run();
 	 
 	 
 		
-			<a class="nav nav-prev" href="/api-reference/request/api/" title="Request API"> <i class="fa fa-chevron-left"></i></a>
 		
-		
-			<a class="nav nav-next" href="/api-reference/storage/" title="Storage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/api-reference/" title="API Reference" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2507,4 +2386,3 @@ request.run();
   </script>
   </body>
 </html>
-

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Request Pipeline :: Delven Documentation</title>
+    <title>File System :: Delven Documentation</title>
 
     
     <link href="/css/nucleus.css?1557318468" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
      
   </head>
-  <body class="" data-url="/api-reference/request/pipeline/">
+  <body class="" data-url="/api-reference/file-system/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -202,7 +202,7 @@
  
   
     
-      <li data-nav-id="/api-reference/file-system/" title="File System" class="dd-item ">
+      <li data-nav-id="/api-reference/file-system/" title="File System" class="dd-item active">
         <a href="/api-reference/file-system/">
         File System
         <i class="fas fa-check read-icon"></i>
@@ -317,7 +317,7 @@
   
     
     <li data-nav-id="/api-reference/request/" title="Request API" class="dd-item 
-        parent
+        
         
         
         ">
@@ -381,7 +381,7 @@
  
   
     
-      <li data-nav-id="/api-reference/request/pipeline/" title="Request Pipeline" class="dd-item active">
+      <li data-nav-id="/api-reference/request/pipeline/" title="Request Pipeline" class="dd-item ">
         <a href="/api-reference/request/pipeline/">
         Request Pipeline
         <i class="fas fa-check read-icon"></i>
@@ -1333,7 +1333,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/gregbugaj/delven-docs/tree/master/content/api-reference/request/pipeline.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/gregbugaj/delven-docs/tree/master/content/api-reference/file-system.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1364,13 +1364,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'>Welcome to Delven</a> > <a href='/api-reference/'>API Reference</a> > <a href='/api-reference/request/'>Request API</a> > Request Pipeline
-          
-         
+            <a href='/'>Welcome to Delven</a> > <a href='/api-reference/'>API Reference</a> > File System
           
          
           
@@ -1387,7 +1381,23 @@
 <ul>
 <li>
 <ul>
-<li><a href="#request-pipeline">Request Pipeline</a></li>
+<li><a href="#fs-readfile-path">fs.readFile(path)</a></li>
+<li><a href="#fs-readdirsync-path-options">fs.readdirSync(path, options)</a></li>
+<li><a href="#fs-statsync-path">fs.statSync(path)</a></li>
+<li><a href="#class-fs-stats">Class : fs.Stats</a>
+<ul>
+<li><a href="#stats-isdirectory">stats.isDirectory()</a></li>
+<li><a href="#stats-isfile">stats.isFile()</a></li>
+<li><a href="#stats-issymboliclink">stats.isSymbolicLink()</a></li>
+<li><a href="#stats-dev">stats.dev</a></li>
+<li><a href="#stats-ino">stats.ino</a></li>
+<li><a href="#stats-mode">stats.mode</a></li>
+<li><a href="#stats-nlink">stats.nlink</a></li>
+<li><a href="#stats-uid">stats.uid</a></li>
+<li><a href="#stats-size">stats.size</a></li>
+<li><a href="#stats-blksize">stats.blksize</a></li>
+</ul></li>
+<li><a href="#todo">TODO</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1402,7 +1412,7 @@
         
 <div class="tags">
 
-  <a class="tag-link" href="/tags/request">request</a>
+  <a class="tag-link" href="/tags/filesystem">filesystem</a>
 
   <a class="tag-link" href="/tags/api">api</a>
 
@@ -1416,7 +1426,7 @@
           
             <h1>
               
-              Request Pipeline
+              File System
             </h1>
           
 
@@ -1452,8 +1462,412 @@
                  
                  
 
-                 <a href="/api-reference/request/pipeline/#request-pipeline">
-                     <li>Request Pipeline</li>
+                 <a href="/api-reference/file-system/#fs.readfilepath">
+                     <li>fs.readFile(path)</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#fs.readdirsyncpath-options">
+                     <li>fs.readdirSync(path, options)</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#fs.statsyncpath">
+                     <li>fs.statSync(path)</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#class--fs.stats">
+                     <li>Class : fs.Stats</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.isdirectory">
+                     <li>stats.isDirectory()</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.isfile">
+                     <li>stats.isFile()</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.issymboliclink">
+                     <li>stats.isSymbolicLink()</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.dev">
+                     <li>stats.dev</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.ino">
+                     <li>stats.ino</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.mode">
+                     <li>stats.mode</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.nlink">
+                     <li>stats.nlink</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.uid">
+                     <li>stats.uid</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.size">
+                     <li>stats.size</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                     <ul class="toc-h3">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#stats.blksize">
+                     <li>stats.blksize</li>
+                 </a>
+                 
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+                     </ul>
+                 
+             
+         
+     
+         
+         
+             
+                 
+                 
+                 
+                     <ul class="toc-h1">
+                 
+                     <ul class="toc-h2">
+                 
+                 
+                 
+                 
+
+                 <a href="/api-reference/file-system/#todo">
+                     <li>TODO</li>
                  </a>
                  
                  
@@ -1469,36 +1883,112 @@
 
 
 
-<h2 id="request-pipeline">Request Pipeline</h2>
+<p>The <code>fs</code> module provides an API for interacting with the file system in a manner closely modeled around standard POSIX functions.</p>
 
-<p>Pipelines allow for chaing requests</p>
+<p>Goal of this inerface is to be compatible with <a href="https://nodejs.org/api/fs.html#fs_file_system">Node.js File System API</a></p>
 
-<pre><code>const request = require('request').create();
+<p>Compatibility objective : <code>80%</code></p>
 
-const onRequestSent = function(request) {
-    console.info(&quot;Sending request : %s&quot;, request);
-}
+<p>To use this module:</p>
 
-const onRequestReceived = function (request, response) {
-    console.info(&quot;Receiving request &quot;);
-}
-
-request.on('resource.requested', onRequestSent);
-request.on('resource.received',  onRequestReceived);
-
-request.start().next(() =&gt; {
-    console.info(&quot;Start **&quot;);
-
-    this.open('https://www.google.com/').next(() =&gt; {
-        // Evaluate function in the context of the loaded page
-        this.evaluate(function () {
-            console.info(&quot;Document Title&quot;);
-        });
-    });
-});
-
-request.run();
+<pre><code>const fs = require('fs');
 </code></pre>
+
+<p>All file system operations have synchronous and asynchronous forms.</p>
+
+<h2 id="fs-readfile-path">fs.readFile(path)</h2>
+
+<p>Compatibility : <code>broken</code></p>
+
+<p>Open, read and return text content of a file. It will throw an exception if it fails.</p>
+
+<ul>
+<li>path <a href="/syntax/datatypes/#string"><code>&lt;string&gt;</code></a>  Path of the file to read from</li>
+<li>Returns : Contents of the file</li>
+</ul>
+
+<pre><code>let data = fs.readFile('/etc/passwd');
+console.info('Data : {0}', data);
+</code></pre>
+
+<h2 id="fs-readdirsync-path-options">fs.readdirSync(path, options)</h2>
+
+<p>Synchronous <a href="http://man7.org/linux/man-pages/man3/readdir.3.html">readdir(3)</a>.</p>
+
+<ul>
+<li>path    <a href="/syntax/datatypes/#string"><code>&lt;string&gt;</code></a> Path of the directory</li>
+<li>options <a href="/syntax/datatypes/#object"><code>&lt;object&gt;</code></a> Options</li>
+<li>Returns : An array of filenames excluding &lsquo;.&rsquo; and &lsquo;..&rsquo;</li>
+</ul>
+
+<h2 id="fs-statsync-path">fs.statSync(path)</h2>
+
+<p>Synchronous <a href="{{http://man7.org/linux/man-pages/man2/stat.2.html}}">stat(2)</a>. Returns an instance of fs.Stats.</p>
+
+<h2 id="class-fs-stats">Class : fs.Stats</h2>
+
+<p>A <code>fs.Stats</code> object provides information about a file.</p>
+
+<h3 id="stats-isdirectory">stats.isDirectory()</h3>
+
+<p>Returns <code>true</code> if the fs.Stats object describes a file system directory.</p>
+
+<h3 id="stats-isfile">stats.isFile()</h3>
+
+<p>Returns <code>true</code> if the fs.Stats object describes a regular file.</p>
+
+<h3 id="stats-issymboliclink">stats.isSymbolicLink()</h3>
+
+<p>Returns <code>true</code> if the fs.Stats object describes a symbolic link.</p>
+
+<h3 id="stats-dev">stats.dev</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> The numeric identifier of the device containing the file.</li>
+</ul>
+
+<h3 id="stats-ino">stats.ino</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> The file system specific &ldquo;Inode&rdquo; number for the file.</li>
+</ul>
+
+<h3 id="stats-mode">stats.mode</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> A bit-field describing the file type and mode.</li>
+</ul>
+
+<h3 id="stats-nlink">stats.nlink</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> The number of hard-links that exist for the file.</li>
+</ul>
+
+<h3 id="stats-uid">stats.uid</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> The numeric user identifier of the user that owns the file (POSIX).</li>
+</ul>
+
+<h3 id="stats-size">stats.size</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> The size of the file in bytes.</li>
+</ul>
+
+<h3 id="stats-blksize">stats.blksize</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type"><code>&lt;number&gt;</code></a> The number of blocks allocated for this file.</li>
+</ul>
+
+<h2 id="todo">TODO</h2>
+
+<ul>
+<li>Add support for Promises</li>
+<li>Fix broken API</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -1620,6 +2110,26 @@ request.run();
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1708,30 +2218,10 @@ request.run();
                     
 
                     
-            
-        
-                    
                         
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1765,7 +2255,6 @@ request.run();
             
                 
                     
-                    
                 
                 
 
@@ -1784,9 +2273,6 @@ request.run();
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2467,10 +2953,10 @@ request.run();
 	 
 	 
 		
-			<a class="nav nav-prev" href="/api-reference/request/api/" title="Request API"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/api-reference/events/" title="Events"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/api-reference/storage/" title="Storage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/api-reference/forms/" title="Forms" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

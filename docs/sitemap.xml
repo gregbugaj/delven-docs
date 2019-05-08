@@ -125,6 +125,15 @@
   </url>
   
   <url>
+    <loc>/api-reference/file-system/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/filesystem/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/getting-started/form-submission/</loc>
   </url>
   
@@ -191,6 +200,15 @@
   
   <url>
     <loc>/syntax/options/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/path/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/api-reference/path/</loc>
   </url>
   
   <url>
