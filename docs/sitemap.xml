@@ -71,6 +71,10 @@
   </url>
   
   <url>
+    <loc>/meta/debuging/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/development/</loc>
     <priority>0</priority>
   </url>
