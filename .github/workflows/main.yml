@@ -38,13 +38,13 @@ jobs:
         run: |
           git config --local user.name "gregbugaj"
           git add ./docs
-          git commit -m "Updating the repository GitHub html pages in the docs folder"
-      - name: Create report file
-        run: date +%s > report.txt
+          git commit -m "Updating the repository html pages in the docs folder"
       - name: Commit report
         run: |
-          git add report.txt
+          git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
           git config --global user.name 'gregbugaj'
           git config --global user.email 'gregbugaj@users.noreply.github.com'
-          git commit -am "Automated report"
+          git commit -am "action(deploy)"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
