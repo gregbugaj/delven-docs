@@ -27,6 +27,11 @@ jobs:
           go-version: '1.15.3'
       - run: go version
 
+      - name: Hugo setup
+        run : 
+        run: |
+          go get github.com/spf13/hugo
+          hugo version
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
