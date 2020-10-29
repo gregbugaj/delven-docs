@@ -1,5 +1,5 @@
 # Build git 
-name: CI
+name: Build docs
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -20,6 +20,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Setup go
+        uses: actions/setup-go@v2
+        with:
+          stable: 'false'
+          go-version: '1.15.3'
+      - run: go version
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -30,9 +36,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Setup go
-        uses: actions/setup-go@v2
-        with:
-          stable: 'false'
-          go-version: '1.15.3'
-      - run: go version
