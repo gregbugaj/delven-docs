@@ -33,3 +33,17 @@ jobs:
         run: | 
           ./pull-theme.sh
           hugo -D
+
+      - name: Commit files # transfer the new html files back into the repository
+        run: |
+          git config --local user.name "gregbugaj"
+          git add ./docs
+          git commit -m "Updating the repository GitHub html pages in the docs folder"
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'gregbugaj'
+          git config --global user.email 'gregbugaj@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
