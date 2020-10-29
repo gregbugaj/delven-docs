@@ -27,9 +27,10 @@ jobs:
           go-version: '1.15.3'
       - run: go version
 
-      - name: Hugo setup
+      - name: Install Hugo
         run: |
-          go get github.com/spf13/hugo
+          wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_extended_0.76.5_Linux-64bit.deb
+          tar -xvf hugo_extended_0.76.5_Linux-64bit.deb
           hugo version
       # Runs a single command using the runners shell
       - name: Run a one-line script
