@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syntax Reference on Delven Documentation</title>
     <link>/syntax/</link>
     <description>Recent content in Syntax Reference on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/syntax/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/syntax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CRAWL</title>
       <link>/syntax/crawl/</link>
@@ -17,7 +13,7 @@
       
       <guid>/syntax/crawl/</guid>
       <description>Delven can move automatically from one page to another. This behavior, called crawling, is enabled using the following syntax:
-Specification    Name Spec Data Types Default Description     depth optional [Number] 2 How deep will the link be followed   follow optional [String] All links Selector to follow   using optional [Object] N/A USING clause    CRAWL { &amp;quot;depth&amp;quot; : 2, &amp;quot;follow&amp;quot; : css(&amp;quot;#comments a&amp;quot;) }  Basic usage This query retrieves data by crawling three layers deep within a web site:</description>
+Specification    Name Spec Data Types Default Description     depth optional [Number] 2 How deep will the link be followed   follow optional [String] All links Selector to follow   using optional [Object] N/A USING clause    CRAWL { &amp;#34;depth&amp;#34; : 2, &amp;#34;follow&amp;#34; : css(&amp;#34;#comments a&amp;#34;) } Basic usage This query retrieves data by crawling three layers deep within a web site:</description>
     </item>
     
     <item>
@@ -26,8 +22,8 @@ Specification    Name Spec Data Types Default Description     depth optional [Nu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/datatypes/</guid>
-      <description> Data types used
-URL { http://www.delven.io }  String { &amp;quot;key&amp;quot; : &amp;quot;String Value&amp;quot; }  Numeric { &amp;quot;key&amp;quot; : 12345 }  Boolean { &amp;quot;key&amp;quot; : true | false }  Object of Key:Value { &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, } }  Array of Strings { &amp;quot;headers&amp;quot;: [ &amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot; ] }  </description>
+      <description>Data types used
+URL { http://www.delven.io } String { &amp;#34;key&amp;#34; : &amp;#34;String Value&amp;#34; } Numeric { &amp;#34;key&amp;#34; : 12345 } Boolean { &amp;#34;key&amp;#34; : true | false } Object of Key:Value { &amp;#34;params&amp;#34; : { &amp;#34;p1&amp;#34;: &amp;#34;valueA&amp;#34;, &amp;#34;p2&amp;#34;: &amp;#34;valueB&amp;#34;, } } Array of Strings { &amp;#34;headers&amp;#34;: [ &amp;#34;Accept: application/xml&amp;#34;, &amp;#34;Content-Type: application/xml&amp;#34; ] } </description>
     </item>
     
     <item>
@@ -37,8 +33,8 @@ URL { http://www.delven.io }  String { &amp;quot;key&amp;quot; : &amp;quot;Strin
       
       <guid>/syntax/from/</guid>
       <description>The FROM clause is used to specifyg source and any joined sources.
-Syntax FROM &amp;lt;from_specification&amp;gt; &amp;lt;from_specification&amp;gt; ::= &amp;lt;from_source&amp;gt; {[ JOIN &amp;lt;from_source&amp;gt;][,...n]} &amp;lt;from_source&amp;gt; ::= &amp;lt;collection_expression&amp;gt; [[AS] input_alias] | input_alias IN &amp;lt;collection_expression&amp;gt; &amp;lt;collection_expression&amp;gt; ::= ROOT | collection_name | input_alias | &amp;lt;collection_expression&amp;gt; &#39;.&#39; property_name | &amp;lt;collection_expression&amp;gt; &#39;[&#39; &amp;quot;property_name&amp;quot; | array_index &#39;]&#39;  Arguments &amp;lt;from_source&amp;gt;
-Specifies a data source, with or without an alias. If alias is not specified, it will be inferred from the  using following rules:</description>
+Syntax FROM &amp;lt;from_specification&amp;gt; &amp;lt;from_specification&amp;gt; ::= &amp;lt;from_source&amp;gt; {[ JOIN &amp;lt;from_source&amp;gt;][,...n]} &amp;lt;from_source&amp;gt; ::= &amp;lt;collection_expression&amp;gt; [[AS] input_alias] | input_alias IN &amp;lt;collection_expression&amp;gt; &amp;lt;collection_expression&amp;gt; ::= ROOT | collection_name | input_alias | &amp;lt;collection_expression&amp;gt; &#39;.&#39; property_name | &amp;lt;collection_expression&amp;gt; &#39;[&#39; &amp;quot;property_name&amp;quot; | array_index &#39;]&#39; Arguments &amp;lt;from_source&amp;gt;
+Specifies a data source, with or without an alias. If alias is not specified, it will be inferred from the &amp;lt;collection_expression&amp;gt; using following rules:</description>
     </item>
     
     <item>
@@ -49,7 +45,7 @@ Specifies a data source, with or without an alias. If alias is not specified, it
       <guid>/syntax/insert/</guid>
       <description>Delven uses a simple syntax to store results. The INTO clause always comes after the SELECT statement. Extraction results are stored in collections, collection is a container for a JSON documents.
 Syntax Examples Inserting This is minimalistic example of our INSERT clause.
-SELECT css(&amp;quot;#header&amp;quot;), css(&amp;quot;#title&amp;quot;) FROM http://www.delven.io/test/index-01.html INSERT HeaderCollection  This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
+SELECT css(&amp;#34;#header&amp;#34;), css(&amp;#34;#title&amp;#34;) FROM http://www.delven.io/test/index-01.html INSERT HeaderCollection This will result in a document to be inserted into a HeaderCollection for each of the returned matches. So if there were two #header id in the page we will have two documents inserted.</description>
     </item>
     
     <item>
@@ -70,9 +66,9 @@ Types of supported joins.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/native/</guid>
-      <description> NATIVE clause allows us to execute Javascript directly on the loaded document
+      <description>NATIVE clause allows us to execute Javascript directly on the loaded document
 See JavaScript Execution for details and examples
-Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html NATIVE &amp;quot;script.js&amp;quot;  </description>
+Syntax NATIVE &amp;#34;script.js&amp;#34; Usage SELECT css(&amp;#34;#id1&amp;#34;) FROM http://www.delven.io/test/index-01.html NATIVE &amp;#34;script.js&amp;#34; </description>
     </item>
     
     <item>
@@ -81,8 +77,8 @@ Syntax NATIVE &amp;quot;script.js&amp;quot;  Usage SELECT css(&amp;quot;#id1&amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/options/</guid>
-      <description> Certain options are Enabled/Disabled by default and they can be controlled with OPTIONS clause.
-Syntax OPTIONS { &amp;quot;OptionName1&amp;quot; : &amp;quot;Value&amp;quot;, &amp;quot;OptionName2&amp;quot; : &amp;quot;Value&amp;quot; }  Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;quot;#id1&amp;quot;) FROM http://www.delven.io/test/index-01.html OPTIONS { &amp;quot;implicit-conversion&amp;quot; : false }  </description>
+      <description>Certain options are Enabled/Disabled by default and they can be controlled with OPTIONS clause.
+Syntax OPTIONS { &amp;#34;OptionName1&amp;#34; : &amp;#34;Value&amp;#34;, &amp;#34;OptionName2&amp;#34; : &amp;#34;Value&amp;#34; } Specification    Name Spec Data Types Value Default Description     implicit-conversion [Boolean] true,false True Automatic type conversion    Usage SELECT css(&amp;#34;#id1&amp;#34;) FROM http://www.delven.io/test/index-01.html OPTIONS { &amp;#34;implicit-conversion&amp;#34; : false } </description>
     </item>
     
     <item>
@@ -112,7 +108,7 @@ Subqueries can return different types of information:
       
       <guid>/syntax/using/</guid>
       <description>Specifies the condition used to retieve the URL. USING clause used JSON like format for specifying the clause.
-Specification    Name Spec Data Types Value Default Description     method optional [String] HTTP Verb GET GET, POST, PUT, HEAD, OPTIONS, DELETE   form optional [String] Form Name main Name of the form to target   params optional [Object of Key:Value]   Parameters to pass   headers optional [Array of Strings]   Headers to pass to the request   cookies optional [Array of Strings]   Cookies to pass to the request    Parameter structure { &amp;quot;method&amp;quot; : &amp;quot;POST&amp;quot;, &amp;quot;form&amp;quot; : &amp;quot;main&amp;quot;, &amp;quot;params&amp;quot; : { &amp;quot;p1&amp;quot;: &amp;quot;valueA&amp;quot;, &amp;quot;p2&amp;quot;: &amp;quot;valueB&amp;quot;, }, &amp;quot;headers&amp;quot; : [&amp;quot;Accept: application/xml&amp;quot;, &amp;quot;Content-Type: application/xml&amp;quot;], &amp;quot;cookies&amp;quot; : [&amp;quot;token=1212&amp;quot;, &amp;quot;another=value&amp;quot;] }  Examples A.</description>
+Specification    Name Spec Data Types Value Default Description     method optional [String] HTTP Verb GET GET, POST, PUT, HEAD, OPTIONS, DELETE   form optional [String] Form Name main Name of the form to target   params optional [Object of Key:Value]   Parameters to pass   headers optional [Array of Strings]   Headers to pass to the request   cookies optional [Array of Strings]   Cookies to pass to the request    Parameter structure { &amp;#34;method&amp;#34; : &amp;#34;POST&amp;#34;, &amp;#34;form&amp;#34; : &amp;#34;main&amp;#34;, &amp;#34;params&amp;#34; : { &amp;#34;p1&amp;#34;: &amp;#34;valueA&amp;#34;, &amp;#34;p2&amp;#34;: &amp;#34;valueB&amp;#34;, }, &amp;#34;headers&amp;#34; : [&amp;#34;Accept: application/xml&amp;#34;, &amp;#34;Content-Type: application/xml&amp;#34;], &amp;#34;cookies&amp;#34; : [&amp;#34;token=1212&amp;#34;, &amp;#34;another=value&amp;#34;] } Examples A.</description>
     </item>
     
     <item>
@@ -122,7 +118,7 @@ Specification    Name Spec Data Types Value Default Description     method optio
       
       <guid>/syntax/watch/</guid>
       <description>WATCH clause allows us to monitor changes to the underlying content.
-   Name Spec Data Types Default Description     selector required `Object Function`    interval optional [String] 12:00:00 Interval of how ofter to check for updates   time optional [String] 12:00:00 Time of day of when to check for update   method optional [String] value Watch Type    Usage The following example setups a WATCH to be executed every 30 seconds.</description>
+   Name Spec Data Types Default Description     selector required Object|Function  Selector to use for watches   interval optional [String] 12:00:00 Interval of how ofter to check for updates   time optional [String] 12:00:00 Time of day of when to check for update   method optional [String] value Watch Type    Usage The following example setups a WATCH to be executed every 30 seconds.</description>
     </item>
     
     <item>
@@ -132,7 +128,7 @@ Specification    Name Spec Data Types Value Default Description     method optio
       
       <guid>/syntax/where/</guid>
       <description>Specifies the search condition for the rows returned by the query.
- Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;)  SELECT css(&#39;#title&#39;) as title FROM http://www.delven.io/test/index-01.html WITHIN css(&amp;quot;.content-container&amp;quot;) WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;.title&amp;quot;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;)  SELECT css(&amp;quot;h1&amp;quot;) as header FROM http://www.</description>
+ Projection means choosing which columns (or expressions) the query will return. Selection means which rows are to be returned.  Arguments SELECT css(&amp;#34;.title&amp;#34;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;#34;.content-container .title&amp;#34;) SELECT css(&amp;#39;#title&amp;#39;) as title FROM http://www.delven.io/test/index-01.html WITHIN css(&amp;#34;.content-container&amp;#34;) WHERE css(&amp;#34;.content-container .title&amp;#34;) LIKE (&amp;#39;Test 1&amp;#39;, &amp;#39;Test 2&amp;#39;) SELECT css(&amp;#34;.title&amp;#34;) as title FROM http://www.delven.io/test/index-01.html WHERE css(&amp;#34;.content-container .title&amp;#34;) LIKE (&amp;#39;Test 1&amp;#39;, &amp;#39;Test 2&amp;#39;) SELECT css(&amp;#34;h1&amp;#34;) as header FROM http://www.</description>
     </item>
     
     <item>
@@ -152,8 +148,8 @@ Arguments expression_name Is a valid identifier for the common table expression.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syntax/within/</guid>
-      <description> WITHIN clause is used to narrow results down
-Basic usage SELECT css(&#39;#title&#39;) as title WITHIN css(&amp;quot;.content-container&amp;quot;) FROM http://www.delven.io/test/index-01.html  Multiple filters SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.delven.io/test/index-01.html  SELECT css(&#39;#title&#39;) as title WITHIN [css(&amp;quot;.content-container-a&amp;quot;), css(&amp;quot;.content-container-b&amp;quot;)] FROM http://www.delven.io/test/index-01.html WHERE css(&amp;quot;.content-container-a .title&amp;quot;) LIKE (&#39;Test 1&#39;, &#39;Test 2&#39;) OR css(&amp;quot;.content-container-b .title&amp;quot;) LIKE (&#39;Test 3&#39;, &#39;Test 4&#39;)  </description>
+      <description>WITHIN clause is used to narrow results down
+Basic usage SELECT css(&amp;#39;#title&amp;#39;) as title WITHIN css(&amp;#34;.content-container&amp;#34;) FROM http://www.delven.io/test/index-01.html Multiple filters SELECT css(&amp;#39;#title&amp;#39;) as title WITHIN [css(&amp;#34;.content-container-a&amp;#34;), css(&amp;#34;.content-container-b&amp;#34;)] FROM http://www.delven.io/test/index-01.html SELECT css(&amp;#39;#title&amp;#39;) as title WITHIN [css(&amp;#34;.content-container-a&amp;#34;), css(&amp;#34;.content-container-b&amp;#34;)] FROM http://www.delven.io/test/index-01.html WHERE css(&amp;#34;.content-container-a .title&amp;#34;) LIKE (&amp;#39;Test 1&amp;#39;, &amp;#39;Test 2&amp;#39;) OR css(&amp;#34;.content-container-b .title&amp;#34;) LIKE (&amp;#39;Test 3&amp;#39;, &amp;#39;Test 4&amp;#39;) </description>
     </item>
     
   </channel>

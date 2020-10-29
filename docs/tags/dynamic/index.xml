@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dynamic on Delven Documentation</title>
+    <title>dynamic on Delven Documentation</title>
     <link>/tags/dynamic/</link>
-    <description>Recent content in Dynamic on Delven Documentation</description>
+    <description>Recent content in dynamic on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/dynamic/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/dynamic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EVENTFLOW</title>
       <link>/event-flow/</link>
@@ -26,8 +22,8 @@
       
       <guid>/event-flow/executing-javascript/</guid>
       <description>Executing script on loaded document
-Arguments Examples A. Execute JavaScript function SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW { &amp;quot;execute&amp;quot; : [&amp;quot;window.scrollTo(0, 0)&amp;quot;, &amp;quot;document.write(&#39;Hello World&#39;)&amp;quot;] }  A. Execute JavaScript on DOMElement Before a funtion can be executed a DOMElement first need to be located
-SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot; : &amp;quot;#btn&amp;quot;, &amp;quot;execute&amp;quot; : [&amp;quot;$.click()&amp;quot;] } ]  Full JavaScript support : ECMAScript 6 Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.</description>
+Arguments Examples A. Execute JavaScript function SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW { &amp;#34;execute&amp;#34; : [&amp;#34;window.scrollTo(0, 0)&amp;#34;, &amp;#34;document.write(&amp;#39;Hello World&amp;#39;)&amp;#34;] } A. Execute JavaScript on [DOMElement] (https://developer.mozilla.org/en-US/docs/Web/API/Element) Before a funtion can be executed a DOMElement first need to be located
+SELECT css(&amp;#34;#btn&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34; : &amp;#34;#btn&amp;#34;, &amp;#34;execute&amp;#34; : [&amp;#34;$.click()&amp;#34;] } ] Full JavaScript support : ECMAScript 6 Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.</description>
     </item>
     
     <item>
@@ -36,7 +32,7 @@ SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/event-flow/keypress-events/</guid>
-      <description>// //
+      <description>[//] (http://www.testingdiaries.com/selenium-ide-keypress-events/) [//] (http://www.testingdiaries.com/selenium-ide-keypress-events/)
 Simulating Keypress Events
 Arguments Below is an exhaustive list of supported keyboard commands.
 Navigation Keys  KEY_LEFT (Navigation Left) KEY_UP (Navigation Up) KEY_RIGHT (Navigation Right) KEY_DOWN (Navigation Down) KEY_PGUP / KEY_PAGE_UP (Page up) KEY_PGDN / KEY_PAGE_DOWN (Page down) KEY_END (End) KEY_HOME (Home)  Function Keys  KEY_F1 to KEY_12 (Function keys from F1 to F12)  Modifier Keys  KEY_ALT (Alt) KEY_CONTROL / KEY_CTRL (Ctrl) KEY_META / KEY_COMMAND (Command) KEY_SHIFT (Shift)  Num Pad Keys  KEY_NUMPAD0 / KEY_N0 to KEY_NUMPAD9 / KEY_N9 (Number keys from 1 to 9) KEY_ADD / KEY_NUM_PLUS (Plus) KEY_DECIMAL/ KEY_NUM_PERIOD (Period) KEY_DIVIDE/ KEY_NUM_DIVISION (Division) KEY_MULTIPLY/ KEY_NUM_MULTIPLY (Multiply) KEY_SEPARATOR/ KEY_SEP (Separator) KEY_SUBTRACT/ KEY_NUM_MINUS (Minus)  Misc.</description>

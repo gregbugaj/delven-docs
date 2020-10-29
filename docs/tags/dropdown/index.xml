@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dropdown on Delven Documentation</title>
+    <title>dropdown on Delven Documentation</title>
     <link>/tags/dropdown/</link>
-    <description>Recent content in Dropdown on Delven Documentation</description>
+    <description>Recent content in dropdown on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/dropdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/dropdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dropdown</title>
       <link>/event-flow/dropdown/</link>
@@ -17,7 +13,7 @@
       
       <guid>/event-flow/dropdown/</guid>
       <description>Interacting with Dropdowns
-Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description     selectByIndex optional [Number] Select Option by Index   selectByValue optional [String] Select Option by Option Value   selectByText optional [String] Select Value by Option Text    Example &amp;lt;select id=&amp;quot;vehicles&amp;quot;&amp;gt; &amp;lt;option value=&amp;quot;opt-volvo&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-saab&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-vw&amp;quot;&amp;gt;VW&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-audi&amp;quot;&amp;gt;Audi&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt;  Select Option by Index SELECT css(&amp;quot;#vehicles option:selected&amp;quot;) FROM http://www.</description>
+Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description     selectByIndex optional [Number] Select Option by Index   selectByValue optional [String] Select Option by Option Value   selectByText optional [String] Select Value by Option Text    Example &amp;lt;select id=&amp;#34;vehicles&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;opt-volvo&amp;#34;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;opt-saab&amp;#34;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;opt-vw&amp;#34;&amp;gt;VW&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;opt-audi&amp;#34;&amp;gt;Audi&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; Select Option by Index SELECT css(&amp;#34;#vehicles option:selected&amp;#34;) FROM http://www.</description>
     </item>
     
   </channel>

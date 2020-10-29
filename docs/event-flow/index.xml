@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EVENTFLOW on Delven Documentation</title>
     <link>/event-flow/</link>
     <description>Recent content in EVENTFLOW on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/event-flow/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/event-flow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Attributes</title>
       <link>/event-flow/element-attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/event-flow/element-attributes/</guid>
-      <description> Interacting with Element Attributes
-Parameter Specification    Name Spec Data Types Description     attribute optional Object of Key:Value Set attribute value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;info&amp;quot; value=&amp;quot;&amp;quot; data-a=&amp;quot;Value A&amp;quot; data-b=&amp;quot;Value B&amp;quot;&amp;gt;  Setting Attribute Values SELECT css(&amp;quot;#info[data-a]&amp;quot;) as aval, css(&amp;quot;#info[data-b]&amp;quot;) as bval FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#info&amp;quot;, &amp;quot;attribute&amp;quot;: { &amp;quot;data-a&amp;quot;: &amp;quot;New Value A&amp;quot;, &amp;quot;data-b&amp;quot;: &amp;quot;New Value B&amp;quot; } } ]  Results { &amp;quot;aval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value A&amp;quot; }, &amp;quot;bval&amp;quot;: { &amp;quot;value&amp;quot;: &amp;quot;New Value B&amp;quot; } }  </description>
+      <description>Interacting with Element Attributes
+Parameter Specification    Name Spec Data Types Description     attribute optional Object of Key:Value Set attribute value    Example &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;info&amp;#34; value=&amp;#34;&amp;#34; data-a=&amp;#34;Value A&amp;#34; data-b=&amp;#34;Value B&amp;#34;&amp;gt; Setting Attribute Values SELECT css(&amp;#34;#info[data-a]&amp;#34;) as aval, css(&amp;#34;#info[data-b]&amp;#34;) as bval FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#info&amp;#34;, &amp;#34;attribute&amp;#34;: { &amp;#34;data-a&amp;#34;: &amp;#34;New Value A&amp;#34;, &amp;#34;data-b&amp;#34;: &amp;#34;New Value B&amp;#34; } } ] Results { &amp;#34;aval&amp;#34;: { &amp;#34;value&amp;#34;: &amp;#34;New Value A&amp;#34; }, &amp;#34;bval&amp;#34;: { &amp;#34;value&amp;#34;: &amp;#34;New Value B&amp;#34; } } </description>
     </item>
     
     <item>
@@ -27,7 +23,7 @@ Parameter Specification    Name Spec Data Types Description     attribute option
       
       <guid>/event-flow/buttons/</guid>
       <description>Interacting with Buttons
-Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
+Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;#34;event[1]&amp;#34; : &amp;#34;click&amp;#34; ] Example &amp;lt;button type=&amp;#34;button&amp;#34; id=&amp;#34;btn&amp;#34;&amp;gt;Click Me!&amp;lt;/button&amp;gt; Setting Value SELECT css(&amp;#34;#btn&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#btn&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;New Button Name&amp;#34; } ] { &amp;#34;column_1&amp;#34; : {&amp;#34;value&amp;#34; : &amp;#34;New Button Name&amp;#34;} } Invoking Click Event Following example will select our button and then perform an click action.</description>
     </item>
     
     <item>
@@ -37,7 +33,7 @@ Parameter Specification    Name Spec Data Types Description     value required [
       
       <guid>/event-flow/dropdown/</guid>
       <description>Interacting with Dropdowns
-Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description     selectByIndex optional [Number] Select Option by Index   selectByValue optional [String] Select Option by Option Value   selectByText optional [String] Select Value by Option Text    Example &amp;lt;select id=&amp;quot;vehicles&amp;quot;&amp;gt; &amp;lt;option value=&amp;quot;opt-volvo&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-saab&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-vw&amp;quot;&amp;gt;VW&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;opt-audi&amp;quot;&amp;gt;Audi&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt;  Select Option by Index SELECT css(&amp;quot;#vehicles option:selected&amp;quot;) FROM http://www.</description>
+Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description     selectByIndex optional [Number] Select Option by Index   selectByValue optional [String] Select Option by Option Value   selectByText optional [String] Select Value by Option Text    Example &amp;lt;select id=&amp;#34;vehicles&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;opt-volvo&amp;#34;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;opt-saab&amp;#34;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;opt-vw&amp;#34;&amp;gt;VW&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;opt-audi&amp;#34;&amp;gt;Audi&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; Select Option by Index SELECT css(&amp;#34;#vehicles option:selected&amp;#34;) FROM http://www.</description>
     </item>
     
     <item>
@@ -48,7 +44,7 @@ Selection Types A. Selecting Dropdown Values    Name Spec Data Types Description
       <guid>/event-flow/element-selection/</guid>
       <description>How to use Selector in Delven
 Selectors tell Delven which DOMElements we will be operating on. Selectors used for for DOM manipulation are similar to selectors used for data selector in SELECT clause.
-Selector types    Name Spec Data Types Description     by-css required [String] Select using CSS   by-name required [String] Select using element name   by-xpath required [String] Select using XPath   by-regex required [String] Select using regular expressions    Requirement [ { &amp;quot;by-XXXXX&amp;quot; : &amp;quot;SELECTOR&amp;quot;, &amp;quot;filter&amp;quot; : &amp;quot;&amp;quot; } ]  Examples For concreate example for specific types visit.</description>
+Selector types    Name Spec Data Types Description     by-css required [String] Select using CSS   by-name required [String] Select using element name   by-xpath required [String] Select using XPath   by-regex required [String] Select using regular expressions    Requirement [ { &amp;#34;by-XXXXX&amp;#34; : &amp;#34;SELECTOR&amp;#34;, &amp;#34;filter&amp;#34; : &amp;#34;&amp;#34; } ] Examples For concreate example for specific types visit.</description>
     </item>
     
     <item>
@@ -68,8 +64,8 @@ Mouse Events    Event Name Fired When     click A pointing device button has bee
       
       <guid>/event-flow/executing-javascript/</guid>
       <description>Executing script on loaded document
-Arguments Examples A. Execute JavaScript function SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW { &amp;quot;execute&amp;quot; : [&amp;quot;window.scrollTo(0, 0)&amp;quot;, &amp;quot;document.write(&#39;Hello World&#39;)&amp;quot;] }  A. Execute JavaScript on DOMElement Before a funtion can be executed a DOMElement first need to be located
-SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot; : &amp;quot;#btn&amp;quot;, &amp;quot;execute&amp;quot; : [&amp;quot;$.click()&amp;quot;] } ]  Full JavaScript support : ECMAScript 6 Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.</description>
+Arguments Examples A. Execute JavaScript function SELECT * FROM http://www.delven.io/test/execute.html EVENTFLOW { &amp;#34;execute&amp;#34; : [&amp;#34;window.scrollTo(0, 0)&amp;#34;, &amp;#34;document.write(&amp;#39;Hello World&amp;#39;)&amp;#34;] } A. Execute JavaScript on [DOMElement] (https://developer.mozilla.org/en-US/docs/Web/API/Element) Before a funtion can be executed a DOMElement first need to be located
+SELECT css(&amp;#34;#btn&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34; : &amp;#34;#btn&amp;#34;, &amp;#34;execute&amp;#34; : [&amp;#34;$.click()&amp;#34;] } ] Full JavaScript support : ECMAScript 6 Delven allows for low lever interaction with documents via JavaScript(ECMAScript 6+) scripts.</description>
     </item>
     
     <item>
@@ -78,7 +74,7 @@ SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/event-flow/keypress-events/</guid>
-      <description>// //
+      <description>[//] (http://www.testingdiaries.com/selenium-ide-keypress-events/) [//] (http://www.testingdiaries.com/selenium-ide-keypress-events/)
 Simulating Keypress Events
 Arguments Below is an exhaustive list of supported keyboard commands.
 Navigation Keys  KEY_LEFT (Navigation Left) KEY_UP (Navigation Up) KEY_RIGHT (Navigation Right) KEY_DOWN (Navigation Down) KEY_PGUP / KEY_PAGE_UP (Page up) KEY_PGDN / KEY_PAGE_DOWN (Page down) KEY_END (End) KEY_HOME (Home)  Function Keys  KEY_F1 to KEY_12 (Function keys from F1 to F12)  Modifier Keys  KEY_ALT (Alt) KEY_CONTROL / KEY_CTRL (Ctrl) KEY_META / KEY_COMMAND (Command) KEY_SHIFT (Shift)  Num Pad Keys  KEY_NUMPAD0 / KEY_N0 to KEY_NUMPAD9 / KEY_N9 (Number keys from 1 to 9) KEY_ADD / KEY_NUM_PLUS (Plus) KEY_DECIMAL/ KEY_NUM_PERIOD (Period) KEY_DIVIDE/ KEY_NUM_DIVISION (Division) KEY_MULTIPLY/ KEY_NUM_MULTIPLY (Multiply) KEY_SEPARATOR/ KEY_SEP (Separator) KEY_SUBTRACT/ KEY_NUM_MINUS (Minus)  Misc.</description>
@@ -91,7 +87,7 @@ Navigation Keys  KEY_LEFT (Navigation Left) KEY_UP (Navigation Up) KEY_RIGHT (Na
       
       <guid>/event-flow/textbox/</guid>
       <description>Interacting with Texboxes
-Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
+Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;firstname&amp;#34; value=&amp;#34;&amp;#34;&amp;gt; Setting Values Setting single value SELECT css(&amp;#34;#firstname&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#firstname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;Greg&amp;#34; } ] { &amp;#34;column_1&amp;#34; : {&amp;#34;value&amp;#34; : &amp;#34;Greg&amp;#34;} } Setting multiple values SELECT css(&amp;#34;#firstname&amp;#34;) as first , css(&amp;#34;#lastname&amp;#34;) as last FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#firstname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;Greg&amp;#34; }, { &amp;#34;by-css&amp;#34;: &amp;#34;#lastname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;B.</description>
     </item>
     
   </channel>

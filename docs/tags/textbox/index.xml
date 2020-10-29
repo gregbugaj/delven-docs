@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Textbox on Delven Documentation</title>
+    <title>textbox on Delven Documentation</title>
     <link>/tags/textbox/</link>
-    <description>Recent content in Textbox on Delven Documentation</description>
+    <description>Recent content in textbox on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/textbox/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/textbox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Buttons</title>
       <link>/event-flow/buttons/</link>
@@ -17,7 +13,7 @@
       
       <guid>/event-flow/buttons/</guid>
       <description>Interacting with Buttons
-Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;quot;event[1]&amp;quot; : &amp;quot;click&amp;quot; ]  Example &amp;lt;button type=&amp;quot;button&amp;quot; id=&amp;quot;btn&amp;quot;&amp;gt;Click Me!&amp;lt;/button&amp;gt;  Setting Value SELECT css(&amp;quot;#btn&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#btn&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;New Button Name&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;New Button Name&amp;quot;} }  Invoking Click Event Following example will select our button and then perform an click action.</description>
+Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;#34;event[1]&amp;#34; : &amp;#34;click&amp;#34; ] Example &amp;lt;button type=&amp;#34;button&amp;#34; id=&amp;#34;btn&amp;#34;&amp;gt;Click Me!&amp;lt;/button&amp;gt; Setting Value SELECT css(&amp;#34;#btn&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#btn&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;New Button Name&amp;#34; } ] { &amp;#34;column_1&amp;#34; : {&amp;#34;value&amp;#34; : &amp;#34;New Button Name&amp;#34;} } Invoking Click Event Following example will select our button and then perform an click action.</description>
     </item>
     
     <item>
@@ -27,7 +23,7 @@ Parameter Specification    Name Spec Data Types Description     value required [
       
       <guid>/event-flow/textbox/</guid>
       <description>Interacting with Texboxes
-Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;firstname&amp;quot; value=&amp;quot;&amp;quot;&amp;gt;  Setting Values Setting single value SELECT css(&amp;quot;#firstname&amp;quot;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;quot;by-css&amp;quot;: &amp;quot;#firstname&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;Greg&amp;quot; } ]  { &amp;quot;column_1&amp;quot; : {&amp;quot;value&amp;quot; : &amp;quot;Greg&amp;quot;} }  Setting multiple values SELECT css(&amp;quot;#firstname&amp;quot;) as first , css(&amp;quot;#lastname&amp;quot;) as last FROM http://www.</description>
+Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;firstname&amp;#34; value=&amp;#34;&amp;#34;&amp;gt; Setting Values Setting single value SELECT css(&amp;#34;#firstname&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#firstname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;Greg&amp;#34; } ] { &amp;#34;column_1&amp;#34; : {&amp;#34;value&amp;#34; : &amp;#34;Greg&amp;#34;} } Setting multiple values SELECT css(&amp;#34;#firstname&amp;#34;) as first , css(&amp;#34;#lastname&amp;#34;) as last FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#firstname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;Greg&amp;#34; }, { &amp;#34;by-css&amp;#34;: &amp;#34;#lastname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;B.</description>
     </item>
     
   </channel>

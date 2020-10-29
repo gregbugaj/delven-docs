@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Delven on Delven Documentation</title>
     <link>/meta/</link>
     <description>Recent content in About Delven on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/meta/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building</title>
       <link>/meta/building/</link>
@@ -22,10 +18,10 @@ Looks like the archvie is broken as it point to the new build. https://developer
 Here is direct link to the download Download Windows 10 SDK 10.0.14393.33 http://download.microsoft.com/download/6/3/B/63BADCE0-F2E6-44BD-B2F9-60F5F073038E/standalonesdk/sdksetup.exe
 Download Windows 10 SDK 10.0.14393.33 http://download.microsoft.com/download/6/3/B/63BADCE0-F2E6-44BD-B2F9-60F5F073038E/standalonesdk/sdksetup.exe
 Building dependenceis https://bitbucket.org/chromiumembedded/cef/wiki/MasterBuildQuickStart#markdown-header-linux-setup
-https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/LHbKDRITc2A%5B1-25%5D &amp;ldquo;&amp;rsquo; DEPOT_TOOLS_WIN_TOOLCHAIN = 0 &amp;ldquo;&amp;rsquo;
+https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/LHbKDRITc2A%5B1-25%5D &#39;&#39;&#39; DEPOT_TOOLS_WIN_TOOLCHAIN = 0 &#39;&#39;&#39;
 https://msdn.microsoft.com/en-us/library/windows/desktop/aa385638(v=vs.85).aspx
-&amp;rdquo;&amp;rsquo;
-[9&amp;frasl;27741] ACTION //base/win:eventlog_messages(//build/toolchain/win:x86) FAILED: gen/base/win/eventlog_messages.h gen/base/win/eventlog_messages.rc C:/code/depot_tools/python276_bin/python.exe ../../build/win/message_compiler.py environment.x86 -h gen/base/win -r gen/base/win -u ../../base/win/eventlog_messages.mc &amp;lsquo;mc.exe&amp;rsquo; is not recognized as an internal or external command, operable program or batch file.</description>
+&#39;&#39;&#39;
+[9/27741] ACTION //base/win:eventlog_messages(//build/toolchain/win:x86) FAILED: gen/base/win/eventlog_messages.h gen/base/win/eventlog_messages.rc C:/code/depot_tools/python276_bin/python.exe ../../build/win/message_compiler.py environment.x86 -h gen/base/win -r gen/base/win -u ../../base/win/eventlog_messages.mc &amp;lsquo;mc.exe&amp;rsquo; is not recognized as an internal or external command, operable program or batch file.</description>
     </item>
     
     <item>
@@ -54,12 +50,15 @@ Remote debugging is enabled on port 9222, allowing CEF to be debugged from any C
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/meta/references/</guid>
-      <description> This software could not be possible without inspirations from my family and friends.
+      <description>This software could not be possible without inspirations from my family and friends.
 Technical references If you see something similar it is probably because it have been inspired by one of the following.
- Selectors | jQuery API Documentation DocumentDB SQL Syntax https://msdn.microsoft.com/en-us/library/bb311040.aspx https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/ Column name qualifiers to avoid ambiguity https://github.com/antlr/grammars-v4/blob/master/json/JSON.g4
- The Node.js Way - How require() Actually Works
- Node.js v7.7.4 Documentation
-  </description>
+  [Selectors | jQuery API Documentation] (https://api.jquery.com/category/selectors/)
+  [DocumentDB SQL Syntax] (https://msdn.microsoft.com/library/azure/dn782250.aspx)
+  [https://msdn.microsoft.com/en-us/library/bb311040.aspx] (https://msdn.microsoft.com/en-us/library/bb311040.aspx)
+  [https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/] (https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/)
+  [Column name qualifiers to avoid ambiguity] (https://www.ibm.com/support/knowledgecenter/en/SSEPEK_11.0.0/sqlref/src/tpc/db2z_colnames2avoidambiguity.html)
+  [https://github.com/antlr/grammars-v4/blob/master/json/JSON.g4] (https://github.com/antlr/grammars-v4/blob/master/json/JSON.g4)
+  [The Node.</description>
     </item>
     
     <item>

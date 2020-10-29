@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Api on Delven Documentation</title>
+    <title>api on Delven Documentation</title>
     <link>/tags/api/</link>
-    <description>Recent content in Api on Delven Documentation</description>
+    <description>Recent content in api on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>File System</title>
       <link>/api-reference/file-system/</link>
@@ -20,7 +16,7 @@
 Goal of this inerface is to be compatible with Node.js File System API
 Compatibility objective : 80%
 To use this module:
-const fs = require(&#39;fs&#39;);  All file system operations have synchronous and asynchronous forms.
+const fs = require(&#39;fs&#39;); All file system operations have synchronous and asynchronous forms.
 fs.readFile(path) Compatibility : broken
 Open, read and return text content of a file. It will throw an exception if it fails.</description>
     </item>
@@ -32,7 +28,7 @@ Open, read and return text content of a file. It will throw an exception if it f
       
       <guid>/api-reference/request/intercepting-requests/</guid>
       <description>Events Event resource requested The &amp;lsquo;resource.requested&amp;rsquo; event is emitted when a request is started.
-   Name Spec Data Types Description     request Request Reference to the request object    const request = require(&#39;request&#39;).create(); request.on(&#39;resource.requested&#39;, (request) =&amp;gt; { console.info(&amp;quot;Sending request&amp;quot;); }); request.start(&#39;http://www.google.com&#39;).then(() =&amp;gt; { console.info(&amp;quot;Page load complete **&amp;quot;); }); request.run();  Event resource received The &amp;lsquo;resource.received&amp;rsquo; event is emitted when a request is received from the source.</description>
+   Name Spec Data Types Description     request Request Reference to the request object    const request = require(&#39;request&#39;).create(); request.on(&#39;resource.requested&#39;, (request) =&amp;gt; { console.info(&amp;quot;Sending request&amp;quot;); }); request.start(&#39;http://www.google.com&#39;).then(() =&amp;gt; { console.info(&amp;quot;Page load complete **&amp;quot;); }); request.run(); Event resource received The &amp;lsquo;resource.received&amp;rsquo; event is emitted when a request is received from the source.</description>
     </item>
     
     <item>
@@ -45,8 +41,9 @@ Open, read and return text content of a file. It will throw an exception if it f
 Goal of this inerface is to be compatible with Node.js Path API
 Compatibility objective : 100%
 To use this module:
-const path = require(&#39;path&#39;);  path.extension(path)  path &amp;lt;string&amp;gt; Path of the file to check Returns: &amp;lt;string&amp;gt; extension  Get the the extension of the path, from the last occurrence of the .
-path.extname(path) Alias for path.extension(path)</description>
+const path = require(&#39;path&#39;); path.extension(path)  path &amp;lt;string&amp;gt; Path of the file to check Returns: &amp;lt;string&amp;gt; extension  Get the the extension of the path, from the last occurrence of the .
+path.extname(path) Alias for path.extension(path)
+path.dirname(path)  path &amp;lt;string&amp;gt; Path of the file to check Returns: &amp;lt;string&amp;gt; directory name  Get the directory name of a path, similar to the Unix dirname command.</description>
     </item>
     
     <item>
@@ -65,8 +62,8 @@ path.extname(path) Alias for path.extension(path)</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/api-reference/request/pipeline/</guid>
-      <description> Request Pipeline Pipelines allow for chaing requests
-const request = require(&#39;request&#39;).create(); const onRequestSent = function(request) { console.info(&amp;quot;Sending request : %s&amp;quot;, request); } const onRequestReceived = function (request, response) { console.info(&amp;quot;Receiving request &amp;quot;); } request.on(&#39;resource.requested&#39;, onRequestSent); request.on(&#39;resource.received&#39;, onRequestReceived); request.start().next(() =&amp;gt; { console.info(&amp;quot;Start **&amp;quot;); this.open(&#39;https://www.google.com/&#39;).next(() =&amp;gt; { // Evaluate function in the context of the loaded page this.evaluate(function () { console.info(&amp;quot;Document Title&amp;quot;); }); }); }); request.run();  </description>
+      <description>Request Pipeline Pipelines allow for chaing requests
+const request = require(&#39;request&#39;).create(); const onRequestSent = function(request) { console.info(&amp;quot;Sending request : %s&amp;quot;, request); } const onRequestReceived = function (request, response) { console.info(&amp;quot;Receiving request &amp;quot;); } request.on(&#39;resource.requested&#39;, onRequestSent); request.on(&#39;resource.received&#39;, onRequestReceived); request.start().next(() =&amp;gt; { console.info(&amp;quot;Start **&amp;quot;); this.open(&#39;https://www.google.com/&#39;).next(() =&amp;gt; { // Evaluate function in the context of the loaded page this.evaluate(function () { console.info(&amp;quot;Document Title&amp;quot;); }); }); }); request.run(); </description>
     </item>
     
   </channel>

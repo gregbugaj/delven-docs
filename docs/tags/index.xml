@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Delven Documentation</title>
     <link>/tags/</link>
     <description>Recent content in Tags on Delven Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Api</title>
+      <title>api</title>
       <link>/tags/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -20,7 +16,7 @@
     </item>
     
     <item>
-      <title>Attributes</title>
+      <title>attributes</title>
       <link>/tags/attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -29,7 +25,7 @@
     </item>
     
     <item>
-      <title>Css</title>
+      <title>css</title>
       <link>/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -47,7 +43,7 @@
     </item>
     
     <item>
-      <title>Dropdown</title>
+      <title>dropdown</title>
       <link>/tags/dropdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -56,7 +52,7 @@
     </item>
     
     <item>
-      <title>Dynamic</title>
+      <title>dynamic</title>
       <link>/tags/dynamic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -65,7 +61,7 @@
     </item>
     
     <item>
-      <title>Event Handling</title>
+      <title>event-handling</title>
       <link>/tags/event-handling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -74,7 +70,7 @@
     </item>
     
     <item>
-      <title>Eventflow</title>
+      <title>eventflow</title>
       <link>/tags/eventflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -83,7 +79,7 @@
     </item>
     
     <item>
-      <title>Events</title>
+      <title>events</title>
       <link>/tags/events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -92,7 +88,7 @@
     </item>
     
     <item>
-      <title>Filesystem</title>
+      <title>filesystem</title>
       <link>/tags/filesystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -101,7 +97,7 @@
     </item>
     
     <item>
-      <title>Javascript</title>
+      <title>javascript</title>
       <link>/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -110,7 +106,7 @@
     </item>
     
     <item>
-      <title>Path</title>
+      <title>path</title>
       <link>/tags/path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -119,7 +115,7 @@
     </item>
     
     <item>
-      <title>Request</title>
+      <title>request</title>
       <link>/tags/request/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -128,7 +124,7 @@
     </item>
     
     <item>
-      <title>Selectors</title>
+      <title>selectors</title>
       <link>/tags/selectors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -137,7 +133,7 @@
     </item>
     
     <item>
-      <title>Textbox</title>
+      <title>textbox</title>
       <link>/tags/textbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
