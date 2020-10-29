@@ -34,4 +34,6 @@ jobs:
           hugo version
 
       - name: Building docs
-        run: hugo -D
+        run: | 
+          ./add-theme.sh
+          hugo -D
