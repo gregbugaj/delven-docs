@@ -28,7 +28,6 @@ jobs:
       - run: go version
 
       - name: Hugo setup
-        run : 
         run: |
           go get github.com/spf13/hugo
           hugo version
