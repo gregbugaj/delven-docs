@@ -33,12 +33,29 @@ jobs:
         run: | 
           ./pull-theme.sh
           hugo -D
-      - name: Commit files # transfer the new html files back into the repository
-        run: | # git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
-          git config --global user.name 'gregbugaj'
-          git config --global user.email 'gregbugaj@users.noreply.github.com'
-          git add ./docs
+      - name: Copny and Push files # transfer the new html files back into the repository
+        run: | # git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs 
+          # git config --global user.name 'gregbugaj'
+          # git config --global user.email 'gregbugaj@users.noreply.github.com'
+
+          git config --global credential.helper store
+          git config --global user.email "gregbugaj.ci.bot@users.noreply.github.com"
+          git config --global user.name "gregbugaj.ci.bot"
+          git config --global push.default simple
+
+          rm -rf deployment
+          mkdir deployment
+          rsync -av --delete --exclude ".git" docs/ deployment
+          git clone --depth 1 --single-branch --branch docs https://github.com/gregbugaj/delven-docs deployment
+          cd deployment
+
+          git add -A
           git commit -am "action(deploy) : Updating the repository html pages in the docs folder"
-          git push
+
+          git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
+          git push origin docs
+
+          cd ..
+          rm -rf deployment
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
