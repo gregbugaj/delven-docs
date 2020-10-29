@@ -38,4 +38,5 @@ jobs:
 
       - name: Building docs
         run: | 
+          ./pull-theme.sh
           hugo -D
