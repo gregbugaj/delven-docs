@@ -33,17 +33,12 @@ jobs:
         run: | 
           ./pull-theme.sh
           hugo -D
-
       - name: Commit files # transfer the new html files back into the repository
-        run: |
-          git config --local user.name "gregbugaj"
-          git add ./docs
-          git commit -m "Updating the repository html pages in the docs folder"
-      - name: Commit report
         run: | # git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
           git config --global user.name 'gregbugaj'
           git config --global user.email 'gregbugaj@users.noreply.github.com'
-          git commit -am "action(deploy)"
+          git add ./docs
+          git commit -am "action(deploy) : Updating the repository html pages in the docs folder"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
