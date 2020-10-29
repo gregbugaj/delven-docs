@@ -41,7 +41,7 @@ jobs:
           git commit -m "Updating the repository html pages in the docs folder"
       - name: Commit report
         run: |
-          git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
+#          git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
           git config --global user.name 'gregbugaj'
           git config --global user.email 'gregbugaj@users.noreply.github.com'
           git commit -am "action(deploy)"
