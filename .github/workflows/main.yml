@@ -30,3 +30,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Setup go
+        uses: actions/setup-go@v2
+        with:
+          stable: 'false'
+          go-version: '1.15.3'
+      - run: go version
