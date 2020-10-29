@@ -4,8 +4,7 @@ type: index
 weight: 0
 ---
 
-Delven is a Domain Specific Language  (DSL) designed for mining content from static and dynamic sources, It closely resembles SQL with features borrowed from other popular dynamic languages.
-It can be run as a interpreter or 'server' mode, it comes with type 4 JDBC driver for ease of integration with java applications.
+Delven is a Domain Specific Language  (DSL) designed for mining content from static and dynamic sources, It closely resembles SQL with features borrowed from other popular  languages.
 
 This documentation is your guide to an advanced new world of real-time data connectivity.
 
@@ -16,19 +15,21 @@ This documentation is your guide to an advanced new world of real-time data conn
 
 ## Under the hood
 
-This is a complete rewrite of original PhantomSQL data extract engine that was written in Java.
+This is a complete rewrite of original PhantomSQL data extract engine that was originally written in Java. Due to limitations of how far application could have been I decide to rewrite it completelly and take adwantage of latest technology available.
+
+
 Main issues that will be addressing with this rewrite are as follows
 
 * Reworking language syntax
   * Based on modern languages / frameworks (EcmaScript / TypeScript / Python / Rubby / SQL/ Node.js)
-  * Web 2.0 and beyound (Support for extracting data from dynamic websites as well as realtime data extraction)
+  * Web 3.0 and beyound (Support for extracting data from dynamic websites as well as realtime data extraction)
 * Exposing low level API as first class citizens
   * Javascript
   * TypeScript
   * C++ navive extensions  
 * Query plan
+* UI Execution Studio
 * Package Manager
-  * Delven Package Manager(DPM)
   * Node Package Manager(NPM)
 * Distributed Processing
-* Machine learning
+* Machine Learning
