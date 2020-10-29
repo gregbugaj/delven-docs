@@ -32,12 +32,6 @@ jobs:
           wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_extended_0.76.5_Linux-64bit.deb
           sudo dpkg -i hugo_extended_0.76.5_Linux-64bit.deb
           hugo version
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Building docs
+        run: hugo -D
