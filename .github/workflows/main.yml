@@ -20,6 +20,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: 0
       - name: Setup go
         uses: actions/setup-go@v2
         with:
@@ -35,5 +38,4 @@ jobs:
 
       - name: Building docs
         run: | 
-          ./pull-theme.sh
           hugo -D
