@@ -15,9 +15,19 @@ This documentation is your guide to an advanced new world of real-time data conn
 
 ## Under the hood
 
-This is a complete rewrite of original PhantomSQL data extract engine that was originally written in Java. Due to limitations of how far application could have been I decide to rewrite it completelly and take adwantage of latest technology available.
+This is a complete rewrite of original PhantomSQL data extract engine that was originally written in Java. Due to limitations of how far application could have been I decide to rewrite it completelly and take advantage of latest technology available.
+
+Delven project consists of following
+
+ * Parser / Transpiller
+   * Transipills delven syntax into valid ECMAScript(JavaScript)
+ * Runtime engine
+   * Runtime that performs actuall extraction
+ * UI Console
+   * Console for managing and executing jobs
 
 
+### Goals
 Main issues that will be addressing with this rewrite are as follows
 
 * Reworking language syntax
