@@ -6,7 +6,7 @@ type: index
 
 ---
 
-Basic syntax
+Basic usage and query syntax
 
 * [Example 001](/)
 * [Example 002](/)
