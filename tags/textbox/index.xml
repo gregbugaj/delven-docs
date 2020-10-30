@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>textbox on Delven Documentation</title>
+    <link>/tags/textbox/</link>
+    <description>Recent content in textbox on Delven Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/tags/textbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buttons</title>
+      <link>/event-flow/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/event-flow/buttons/</guid>
+      <description>Interacting with Buttons
+Parameter Specification    Name Spec Data Types Description     value required [String] Set value   event required [String] Invoke event    &amp;#34;event[1]&amp;#34; : &amp;#34;click&amp;#34; ] Example &amp;lt;button type=&amp;#34;button&amp;#34; id=&amp;#34;btn&amp;#34;&amp;gt;Click Me!&amp;lt;/button&amp;gt; Setting Value SELECT css(&amp;#34;#btn&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#btn&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;New Button Name&amp;#34; } ] { &amp;#34;column_1&amp;#34; : {&amp;#34;value&amp;#34; : &amp;#34;New Button Name&amp;#34;} } Invoking Click Event Following example will select our button and then perform an click action.</description>
+    </item>
+    
+    <item>
+      <title>Textbox</title>
+      <link>/event-flow/textbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/event-flow/textbox/</guid>
+      <description>Interacting with Texboxes
+Parameter Specification    Name Spec Data Types Description     value optional [String] Set value    Example &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;firstname&amp;#34; value=&amp;#34;&amp;#34;&amp;gt; Setting Values Setting single value SELECT css(&amp;#34;#firstname&amp;#34;) FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#firstname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;Greg&amp;#34; } ] { &amp;#34;column_1&amp;#34; : {&amp;#34;value&amp;#34; : &amp;#34;Greg&amp;#34;} } Setting multiple values SELECT css(&amp;#34;#firstname&amp;#34;) as first , css(&amp;#34;#lastname&amp;#34;) as last FROM http://www.delven.io/test/execute.html EVENTFLOW [ { &amp;#34;by-css&amp;#34;: &amp;#34;#firstname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;Greg&amp;#34; }, { &amp;#34;by-css&amp;#34;: &amp;#34;#lastname&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;B.</description>
+    </item>
+    
+  </channel>
+</rss>
