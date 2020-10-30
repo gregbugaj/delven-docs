@@ -32,6 +32,7 @@ jobs:
       - name: Building docs
         run: | 
           ./pull-theme.sh
+          mkdir docs
           hugo -D
       - name: Copy and Push files # transfer the new html files back into the repository
         run: | # git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs 
@@ -46,7 +47,7 @@ jobs:
           cd deployment
 
           git add -A
-          git commit -am "action(deploy) : Updating the 'docs' branch"
+          git commit -am "action(deploy) : Updating 'docs' branch"
 
           git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
           git push origin docs
