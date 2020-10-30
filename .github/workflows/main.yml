@@ -33,7 +33,7 @@ jobs:
         run: | 
           ./pull-theme.sh
           hugo -D
-      - name: Copny and Push files # transfer the new html files back into the repository
+      - name: Copy and Push files # transfer the new html files back into the repository
         run: | # git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs 
           # git config --global user.name 'gregbugaj'
           # git config --global user.email 'gregbugaj@users.noreply.github.com'
@@ -44,9 +44,8 @@ jobs:
           git config --global push.default simple
 
           rm -rf deployment
-          mkdir deployment
-          rsync -av --delete --exclude ".git" docs/ deployment
           git clone --depth 1 --single-branch --branch docs https://github.com/gregbugaj/delven-docs deployment
+          rsync -av --delete --exclude ".git" docs/ deployment
           cd deployment
 
           git add -A
