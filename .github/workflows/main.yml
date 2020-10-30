@@ -35,9 +35,6 @@ jobs:
           hugo -D
       - name: Copy and Push files # transfer the new html files back into the repository
         run: | # git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs 
-          # git config --global user.name 'gregbugaj'
-          # git config --global user.email 'gregbugaj@users.noreply.github.com'
-
           git config --global credential.helper store
           git config --global user.email "gregbugaj.ci.bot@users.noreply.github.com"
           git config --global user.name "gregbugaj.ci.bot"
@@ -49,7 +46,7 @@ jobs:
           cd deployment
 
           git add -A
-          git commit -am "action(deploy) : Updating the repository html pages in the docs folder"
+          git commit -am "action(deploy) : Updating the 'docs' branch"
 
           git remote set-url --push origin https://gregbugaj:$GITHUB_TOKEN@github.com/gregbugaj/delven-docs
           git push origin docs
