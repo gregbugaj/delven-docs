@@ -28,6 +28,7 @@ Delven project consists of following
 
 
 ### Goals
+
 Main issues that will be addressing with this rewrite are as follows
 
 * Reworking language syntax

@@ -1,9 +1,8 @@
-# Delven Data Extract Documentation 
-
+# Delven Data Extract Documentation
 
 ## Testing locally
 
-```
+```sh
 hugo server --watch --buildDrafts
 ```
 
