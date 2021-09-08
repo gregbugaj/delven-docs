@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Functions :: Delven Documentation</title>
+    <title>Language Grammar :: Delven Documentation</title>
 
     
     <link href="/css/nucleus.css?1631103734" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/getting-started/functions/">
+  <body class="" data-url="/grammar/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -643,7 +643,7 @@
   
     
     <li data-nav-id="/getting-started/" title="Delven in a Nutshell" class="dd-item
-        parent
+        
         
         
         ">
@@ -772,8 +772,8 @@
   
     
     <li data-nav-id="/getting-started/functions/" title="Functions" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/getting-started/functions/">
@@ -1250,8 +1250,8 @@
   
     
     <li data-nav-id="/grammar/" title="Language Grammar" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/grammar/">
@@ -1646,7 +1646,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/gregbugaj/delven-docs/tree/master/content/getting-started/functions/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/gregbugaj/delven-docs/tree/master/content/grammar/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1673,13 +1673,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'>Welcome to Delven</a> > <a href='/getting-started/'>Delven in a Nutshell</a> > Functions
-          
-        
+            <a href='/'>Welcome to Delven</a> > Language Grammar
           
         
           
@@ -1692,11 +1686,13 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#footnotes">Footnotes</a>
       <ul>
-        <li><a href="#returning-from-a-function">Returning from a function</a></li>
-        <li><a href="#arrow-function">Arrow Function</a></li>
-        <li><a href="#returning-from-a-function-with-context">Returning from a function with context</a></li>
+        <li><a href="#fn1">FN.1</a></li>
+        <li><a href="#fn2">FN.2</a></li>
+        <li><a href="#fn3">FN.3</a></li>
+        <li><a href="#fn4">FN.4</a></li>
+        <li><a href="#fn5">FN.5</a></li>
       </ul>
     </li>
   </ul>
@@ -1716,7 +1712,7 @@
           
             <h1>
               
-              Functions
+              Language Grammar
             </h1>
           
 
@@ -1724,24 +1720,15 @@
 
 
 
-	<p>Functions</p>
-<h3 id="returning-from-a-function">Returning from a function</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">xy</span>() {
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">select</span> <span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#39;#sel1&#39;</span>) <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Source</span>()
-  }
-</code></pre></div><h3 id="arrow-function">Arrow Function</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> () =&gt; <span style="color:#a6e22e">select</span> <span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#39;#sel1&#39;</span>) <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Source</span>()
-</code></pre></div><h3 id="returning-from-a-function-with-context">Returning from a function with context</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">xy</span>() {
-  <span style="color:#66d9ef">return</span> (
-    <span style="color:#a6e22e">using</span> <span style="color:#a6e22e">context</span>(){
-    <span style="color:#a6e22e">select</span> <span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#39;#sel1&#39;</span>) <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Source</span>()
-    <span style="color:#a6e22e">union</span>
-    <span style="color:#a6e22e">select</span> <span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#39;#sel1&#39;</span>) <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">Source</span>()
-  }
-  )
-}
-</code></pre></div>
+	<p>Grammar is based on ANTLR Javascript <a href="https://github.com/antlr/grammars-v4/tree/master/javascript">https://github.com/antlr/grammars-v4/tree/master/javascript</a> and will be updates as needed to be in sync.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p>Number of fixes has been made to the grammar to be ECMAScript compatible and they are annotated in the gramamr file with <code>FN.N</code></p>
+<h3 id="fn1">FN.1</h3>
+<h3 id="fn2">FN.2</h3>
+<h3 id="fn3">FN.3</h3>
+<h3 id="fn4">FN.4</h3>
+<h3 id="fn5">FN.5</h3>
+
 
 
 
@@ -2154,7 +2141,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2169,9 +2155,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2237,7 +2220,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2253,9 +2235,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2564,6 +2543,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2579,6 +2559,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2824,10 +2807,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/getting-started/form-submission/" title="Form submission"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/language-elements/table-designators/" title="Table designators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/getting-started/joining/" title="Joining data" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/syntax/" title="Syntax Reference" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
