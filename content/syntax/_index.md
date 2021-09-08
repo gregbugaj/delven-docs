@@ -5,9 +5,7 @@ chapter: true
 weight: 0
 ---
 
-### Chapter X
+### Syntax Reference
 
-# Some Chapter title
-
-Lorem ipsum
-
+<!-- # Some Chapter title -->
+Syntax covering the ECMAScript lanaguage extensions
