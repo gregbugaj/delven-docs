@@ -11,6 +11,10 @@ hugo server --watch --buildDrafts
 Docs build using hugo
 Hosted using github pages
 
+### How to publish
+
+On main branch make necessary changes then push.
+
 
 ## build dependecies
 
